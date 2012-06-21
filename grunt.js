@@ -37,11 +37,17 @@ module.exports = function(grunt){
         files: 'src/less/*',
         tasks: 'less'
       }
+    },
+    min: {
+      dist: {
+        src: ['src/sidetap.js'],
+        dest: 'src/sidetap.min.js'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib');
   grunt.registerTask('build', 'coffee less');
-  grunt.registerTask('default', 'coffee less');
+  grunt.registerTask('default', 'coffee less min');
 
 };
