@@ -10,34 +10,41 @@
   </head>
   <body>
     <div class="sidetap stp-full-height">
+
       <div class="stp-nav stp-full-height">
-        <div><header class="header-navigation">
-        <img height="32" src="profile-pic.png" width="32">
-        <h4>Hello Brutus!</h4>
-        </header>
-        <nav>
-        <a class="nav-timesheets selected" href="/timesheet">Timesheets</a>
+        <div>
+          <header class="header-navigation">
+            <img height="32" src="profile-pic.png" width="32" />
+            <h4>Hello Brutus!</h4>
+          </header>
 
-        <a class="nav-team-status" href="/timesheet/team">Team Status</a>
+          <nav>
 
-        <a class="nav-changelog deemphasize" href="/timesheet/mobile/changelog">
-        What's New?
-        <span class="version"></span>
-        </a>
-        <a class="nav-feedback deemphasize" href="/timesheet/feedback">Send Us Feedback</a>
-        <a class="nav-desktop-version classic-link deemphasize" href="/daily">Desktop Version</a>
-        <a class="nav-logout classic-link deemphasize" href="/account/logout">Sign Out</a>
-        </nav>
+            <a class="nav-timesheets selected" href="/timesheet">Timesheets</a>
+            <a class="nav-team-status" href="/timesheet/team">Team Status</a>
+
+            <a class="nav-changelog deemphasize" href="/timesheet/mobile/changelog">
+              What's New?
+              <span class="version"></span>
+            </a>
+
+            <a class="nav-feedback deemphasize" href="/timesheet/feedback">Send Us Feedback</a>
+            <a class="nav-desktop-version classic-link deemphasize" href="/daily">Desktop Version</a>
+            <a class="nav-logout classic-link deemphasize" href="/account/logout">Sign Out</a>
+          </nav>
         </div>
       </div>
+
       <div class="stp-content stp-full-height" id="content">
         <header class="stp-fake-header">&nbsp;</header>
         <div class="stp-overlay nav-toggle">&nbsp;</div>
+
         <div class="stp-content-panel" style="">
           <header class="header-">
             <a class="header-button right js-show-add-time-form" href="javascript:void(0)">
               <span class="add">+</span>
             </a>
+
             <a class="header-button js-nav-button" href="javascript:void(0)">
               <span class="menu">Menu</span>
             </a>
@@ -52,14 +59,36 @@
             </div>
           </div>
         </div>
+
+        <div class="stp-content-panel" style="">
+          <header class="header-">
+            <a class="header-button right js-show-add-time-form" href="javascript:void(0)">
+              <span class="add">+</span>
+            </a>
+
+            <a class="header-button js-nav-button" href="javascript:void(0)">
+              <span class="menu">Menu</span>
+            </a>
+        
+            <h1>Sleuth</h1>
+          </header>
+          
+          <div class="stp-content-frame">
+            <div class="stp-content-body">
+              <div class="container">
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-    </div>
+
     <script type="text/javascript" src="../../lib/jquery.1.7.2.js"></script>
     <script type="text/javascript" src="../../src/sidetap.js"></script>
     <script>
       var st = sidetap();
-      $(".js-nav-button").on("click",st.toggle_nav)
+      $(".js-nav-button").on("click",st.toggle_nav);
       console.dir(st);
     </script>
   </body>
