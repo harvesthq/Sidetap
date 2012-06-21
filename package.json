@@ -1,0 +1,18 @@
+{
+  "author": "harvest",
+  "name": "sidetap",
+  "version": "0.1.1",
+  "description": "Some other day.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harvesthq/sidetap"
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": ">= 1.2",
+    "less": ">= 418",
+  }
+}
