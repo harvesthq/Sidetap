@@ -14,10 +14,10 @@ module.exports = function(grunt){
           bare: true
         },
         files: {
-          'src/sidetap.js': 'src/coffee/sidetap.coffee',
+          'src/sidetap_loader.js': 'src/coffee/sidetap_loader.coffee',
           'src/sidetap_standard.js': 'src/coffee/sidetap_standard.coffee',
           'src/sidetap_ios.js': 'src/coffee/sidetap_ios.coffee',
-          'src/sidetap_merged.js': ['src/coffee/*.coffee']
+          'src/sidetap.js': ['src/coffee/*.coffee']
         }
       }
     },

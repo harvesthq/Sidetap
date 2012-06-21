@@ -1,1 +1,4 @@
 node_modules/
+src/sidetap_ios.js
+src/sidetap_loader.js
+src/sidetap_standard.js
