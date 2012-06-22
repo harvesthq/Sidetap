@@ -39,7 +39,7 @@
       _ref = images[section];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         img = _ref[_i];
-        thumbnails.append($("<li><a href='javascript:void(0)'><img src='" + img.url_q + "' alt='' /></a></li>"));
+        thumbnails.append($("<li><a href='javascript:void(0)'><img src='" + img.url_s + "' alt='' /></a></li>"));
       }
       gallery.find('h1').text(section + ' Bears');
       return $('#gallery .thumbnails a').click(function() {
@@ -50,7 +50,7 @@
       st.show_section(detail, {
         animation: 'infromright'
       });
-      return detail.find('.stp-content-body img').prop('src', src);
+      return detail.find('.stp-content-body img').prop('src', src.replace("_s.jpg", "_m.jpg"));
     };
   });
 

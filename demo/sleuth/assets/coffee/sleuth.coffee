@@ -31,7 +31,7 @@ $(document).ready () ->
 
   render_thumbnails = (section, images) ->
     thumbnails.empty()
-    thumbnails.append($("<li><a href='javascript:void(0)'><img src='#{img.url_q}' alt='' /></a></li>")) for img in images[section]
+    thumbnails.append($("<li><a href='javascript:void(0)'><img src='#{img.url_s}' alt='' /></a></li>")) for img in images[section]
 
     gallery.find('h1').text(section + ' Bears')
 
@@ -42,4 +42,4 @@ $(document).ready () ->
 
   show_image = (src) ->
     st.show_section(detail, {animation: 'infromright'})
-    detail.find('.stp-content-body img').prop('src', src)
+    detail.find('.stp-content-body img').prop('src', src.replace("_s.jpg", "_m.jpg"))
