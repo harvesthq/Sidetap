@@ -16,35 +16,43 @@ time, mark, audio, video {
   font-size: 100%;
   font-family: inherit;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* line 22, sass/reset.sass */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 /* line 25, sass/reset.sass */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 /* line 27, sass/reset.sass */
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 /* line 29, sass/reset.sass */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
-  content: none; }
+  content: none;
+}
 
 /* line 33, sass/reset.sass */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
+
+
 
 /* line 21, sass/mobile.sass */
 body {
-  background: #e4e4e4 url("../../src/img/bg.jpg") repeat;
+  background: #e4e4e4 url('../../src/img/bg.jpg') repeat;
   -moz-background-size: 200px 200px;
   -webkit-background-size: 200px 200px;
   -o-background-size: 200px 200px;
@@ -55,25 +63,28 @@ body {
   font-weight: normal;
   text-shadow: 0 1px 0 white;
   word-wrap: break-word;
-  -webkit-text-size-adjust: none; }
+  -webkit-text-size-adjust: none;
+}
 
 /* line 32, sass/mobile.sass */
 h1 {
   color: white;
   font-size: 20px;
   font-weight: bold;
-  line-height: 42px; }
+  line-height: 42px;
+}
 
 /* line 37, sass/mobile.sass */
 h2 {
   color: #444444;
   font-size: 17px;
   font-weight: normal;
-  line-height: 43px; }
-
+  line-height: 43px;
+}
 /* line 42, sass/mobile.sass */
 h2 strong {
-  color: #222222; }
+  color: #222222;
+}
 
 /* line 44, sass/mobile.sass */
 h3 {
@@ -81,7 +92,8 @@ h3 {
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
-  padding: 10px; }
+  padding: 10px;
+}
 
 /* line 50, sass/mobile.sass */
 h4 {
@@ -90,15 +102,17 @@ h4 {
   font-size: 15px;
   font-weight: bold;
   line-height: 18px;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /* line 58, sass/mobile.sass */
 a {
-  color: #444444; }
+  color: #444444;
+}
 
 /* line 73, sass/mobile.sass */
 .stp-content {
-  background: #e4e4e4 url("../../src/img/bg.jpg") repeat;
+  background: #e4e4e4 url('../../src/img/bg.jpg') repeat;
   -moz-background-size: 200px 200px;
   -webkit-background-size: 200px 200px;
   -o-background-size: 200px 200px;
@@ -106,15 +120,17 @@ a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* line 78, sass/mobile.sass */
 .stp-content-panel {
-  background: #e4e4e4 url("../../src/img/bg.jpg") repeat;
+  background: #e4e4e4 url('../../src/img/bg.jpg') repeat;
   -moz-background-size: 200px 200px;
   -webkit-background-size: 200px 200px;
   -o-background-size: 200px 200px;
-  background-size: 200px 200px; }
+  background-size: 200px 200px;
+}
 
 /* line 86, sass/mobile.sass */
 header {
@@ -139,8 +155,8 @@ header {
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3); }
-
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
 /* line 100, sass/mobile.sass */
 header > .header-button {
   background: #e24000;
@@ -172,16 +188,16 @@ header > .header-button {
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25); }
-
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
+}
 /* line 118, sass/mobile.sass */
 header > .header-button.add span {
   font-size: 28px;
-  line-height: 20px; }
-
+  line-height: 20px;
+}
 /* line 121, sass/mobile.sass */
 header > .header-button.menu span {
-  background: transparent url("../../src/img/menu.png") no-repeat;
+  background: transparent url('../../src/img/menu.png') no-repeat;
   -moz-background-size: 17px 15px;
   -webkit-background-size: 17px 15px;
   -o-background-size: 17px 15px;
@@ -190,13 +206,13 @@ header > .header-button.menu span {
   height: 15px;
   margin: 6px 2px 0;
   text-indent: -9999px;
-  width: 17px; }
-
+  width: 17px;
+}
 /* line 129, sass/mobile.sass */
 header > .header-button.right {
   left: auto;
-  right: 5px; }
-
+  right: 5px;
+}
 /* line 132, sass/mobile.sass */
 header > .header-button.special {
   background: #d4d4d4;
@@ -212,7 +228,8 @@ header > .header-button.special {
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important;
   -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important; }
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important;
+}
 
 /* line 203, sass/mobile.sass */
 header.header-navigation {
@@ -230,8 +247,8 @@ header.header-navigation {
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.14);
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.14);
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.14);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.14); }
-
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.14);
+}
 /* line 211, sass/mobile.sass */
 header.header-navigation > img {
   display: inline-block;
@@ -242,7 +259,8 @@ header.header-navigation > img {
   -o-border-radius: 3px;
   -ms-border-radius: 3px;
   -khtml-border-radius: 3px;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
 /* line 233, sass/mobile.sass */
 .button-gray {
@@ -272,7 +290,8 @@ header.header-navigation > img {
   -moz-box-shadow: inset 0 1px 0 white;
   -webkit-box-shadow: inset 0 1px 0 white;
   -o-box-shadow: inset 0 1px 0 white;
-  box-shadow: inset 0 1px 0 white; }
+  box-shadow: inset 0 1px 0 white;
+}
 
 /* line 240, sass/mobile.sass */
 .button-green {
@@ -304,7 +323,8 @@ header.header-navigation > img {
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4); }
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
 
 /* line 249, sass/mobile.sass */
 .button-blue {
@@ -336,7 +356,8 @@ header.header-navigation > img {
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5); }
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
 
 /* line 258, sass/mobile.sass */
 .button-deemphasize {
@@ -362,7 +383,8 @@ header.header-navigation > img {
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0);
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0); }
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0);
+}
 
 /* line 266, sass/mobile.sass */
 .button-loading {
@@ -393,25 +415,27 @@ header.header-navigation > img {
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5); }
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
 
 /* line 278, sass/mobile.sass */
 .stp-nav {
-  background: #444444 url("../../src/img/bg-gray.jpg") repeat;
+  background: #444444 url('../../src/img/bg-gray.jpg') repeat;
   -moz-background-size: 200px 200px;
   -webkit-background-size: 200px 200px;
   -o-background-size: 200px 200px;
   background-size: 200px 200px;
   border-right: 1px solid black;
-  width: 272px; }
+  width: 272px;
+}
 
 /* line 284, sass/mobile.sass */
 nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   display: block;
   padding-top: 44px;
-  -webkit-transform: translateZ(0); }
-
+  -webkit-transform: translateZ(0);
+}
 /* line 289, sass/mobile.sass */
 nav > a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -427,18 +451,18 @@ nav > a {
   position: relative;
   -webkit-transform: translateZ(0);
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4); }
-
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+}
 /* line 304, sass/mobile.sass */
 nav > a > span {
   color: #777777;
   font-size: 14px;
   font-weight: normal;
-  padding-left: 5px; }
-
+  padding-left: 5px;
+}
 /* line 309, sass/mobile.sass */
 nav > a:after {
-  background: transparent url("../../src/img/arrow-right-white.png") no-repeat left center;
+  background: transparent url('../../src/img/arrow-right-white.png') no-repeat left center;
   -moz-background-size: 19px 14px;
   -webkit-background-size: 19px 14px;
   -o-background-size: 19px 14px;
@@ -451,8 +475,8 @@ nav > a:after {
   -webkit-transform: translateZ(0);
   right: 0;
   top: 0;
-  width: 19px; }
-
+  width: 19px;
+}
 /* line 321, sass/mobile.sass */
 nav > a.selected {
   background: #555555;
@@ -464,44 +488,47 @@ nav > a.selected {
   background: linear-gradient(top, #666666, #555555);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  color: white; }
-
+  color: white;
+}
 /* line 327, sass/mobile.sass */
 nav > a.selected > span {
-  color: #999999; }
-
+  color: #999999;
+}
 /* line 329, sass/mobile.sass */
 nav > a.selected:after {
-  opacity: 1; }
-
+  opacity: 1;
+}
 /* line 331, sass/mobile.sass */
 nav > a.deemphasize {
   color: #888888;
   font-size: 14px;
-  font-weight: normal; }
-
+  font-weight: normal;
+}
 /* line 335, sass/mobile.sass */
 nav > a.deemphasize:after {
-  opacity: 0; }
-
+  opacity: 0;
+}
 /* line 337, sass/mobile.sass */
 nav > a.deemphasize.selected {
-  color: white; }
+  color: white;
+}
 
 /* line 385, sass/mobile.sass */
 .container {
-  font-size: 13px; }
-
+  font-size: 13px;
+}
 /* line 389, sass/mobile.sass */
 .container.edit-entry {
-  padding-top: 24px; }
-
+  padding-top: 24px;
+}
 /* line 391, sass/mobile.sass */
 .container.team-status {
-  padding-top: 0px; }
+  padding-top: 0px;
+}
 
 /* line 394, sass/mobile.sass */
 section {
   margin: 10px 0px;
   position: relative;
-  -webkit-transform: translateZ(0); }
+  -webkit-transform: translateZ(0);
+}

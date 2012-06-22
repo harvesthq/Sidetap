@@ -274,7 +274,6 @@ this.SidetapIos = (function(_super) {
 
 this.sidetap = function() {
   var ios5;
-  return new SidetapStandard();
   ios5 = navigator.userAgent.toLowerCase().match(/(iphone|ipod|ipad)/) && window.SharedWorker;
   if (ios5) {
     return new SidetapIos();
