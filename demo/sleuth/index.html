@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <link type="text/css" rel="stylesheet" media="screen" href="../../src/sidetap.css" />
-    <link type="text/css" rel="stylesheet" media="screen" href="sleuth.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="assets/css/sleuth.css" />
   </head>
   <body>
     <div class="sidetap stp-full-height">
@@ -17,22 +17,17 @@
       <div class="stp-nav stp-full-height">
         <div>
           <header class="header-navigation">
-            <img src="profile-pic.png" height="32" width="32" />
+            <img src="assets/img/profile-pic.png" height="32" width="32" />
             <h4>Hello Brutus!</h4>
           </header>
 
           <nav>
-            <a href="#" class="selected">Timesheets</a>
-            <a href="#" class="doit">Team Status</a>
-
-            <a class="deemphasize" href="#">
-              What's New?
-              <span></span>
-            </a>
-
-            <a class="deemphasize" href="#">Send Us Feedback</a>
-            <a class="deemphasize" href="#">Desktop Version</a>
-            <a class="deemphasize" href="#">Sign Out</a>
+            <a href="#" class="selected">Black</a>
+            <a href="#">Grizzly (Brown)</a>
+            <a href="#">Kodiak (Brown)</a>
+            <a href="#">Panda</a>
+            <a href="#">Polar</a>
+            <a href="#">Sun</a>
           </nav>
         </div>
       </div>
@@ -41,18 +36,55 @@
         <header class="stp-fake-header">&nbsp;</header>
         <div class="stp-overlay nav-toggle">&nbsp;</div>
 
-        <!-- Page 1 -->
-        <div class="stp-content-panel" id="page-1">
+        <!-- Gallery -->
+        <div class="stp-content-panel" id="gallery">
           <header>
-            <a href="javascript:void(0)" class="header-button add right"><span>+</span></a>
-            <a href="javascript:void(0)" class="header-button menu"><span>Menu</span></a>
-
-            <h1>Sleuth</h1>
+            <a href="javascript:void(0)" class="header-button icon menu"><span>Menu</span></a>
+            <a href="javascript:void(0)" class="header-button icon info right"><span>Info</span></a>
+            <h1>Black Bears</h1>
           </header>
 
           <div class="stp-content-frame">
             <div class="stp-content-body">
-              <div class="container">Fooooobar</div>
+              <div>
+
+                <ul class="thumbnails">
+                  <li><a href="#"><img src="http://farm5.staticflickr.com/4088/4972836169_c1da58367e_q.jpg" alt="" /></a></li>
+                  <li><a href="#"><img src="http://farm5.staticflickr.com/4088/4972836169_c1da58367e_q.jpg" alt="" /></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail page -->
+        <div class="stp-content-panel hidden" id="detail">
+          <header>
+            <a href="javascript:void(0)" class="header-button back"><span>Back</span></a>
+            <h1></h1>
+          </header>
+
+          <div class="stp-content-frame">
+            <div class="stp-content-body">
+              <div>
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About page -->
+        <div class="stp-content-panel hidden" id="about">
+          <header>
+            <a href="javascript:void(0)" class="header-button menu"><span>Menu</span></a>
+            <h1>SleuthApp</h1>
+          </header>
+
+          <div class="stp-content-frame">
+            <div class="stp-content-body">
+              <div>
+                Good luck figuring stuff out!
+              </div>
             </div>
           </div>
         </div>
@@ -62,9 +94,6 @@
 
     <script type="text/javascript" src="../../lib/jquery.1.7.2.js"></script>
     <script type="text/javascript" src="../../src/sidetap.js"></script>
-    <script>
-      var st = sidetap();
-      $('.menu').on('click', st.toggle_nav);
-    </script>
+    <script type="text/javascript" src="assets/js/sleuth.js"></script>
   </body>
 </html>
