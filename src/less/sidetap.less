@@ -236,27 +236,23 @@ html, body {
 .slide-out-to-left {
   -webkit-transform: translateX(-100%);
   -webkit-animation-name: slideouttoleft;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-duration: 200ms;
 }
 
 .slide-in-from-right {
   -webkit-transform: translateX(0);
   -webkit-animation-name: slideinfromright;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-duration: 200ms;
 }
 
 .slide-out-to-right {
   -webkit-transform: translateX(100%);
   -webkit-animation-name: slideouttoright;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-duration: 200ms;
 }
 
 .slide-in-from-left {
   -webkit-transform: translateX(0);
   -webkit-animation-name: slideinfromleft;
+}
+.slide-in-from-left, .slide-out-to-right, .slide-in-from-right, .slide-out-to-left {
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: 200ms;
 }
