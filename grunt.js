@@ -31,7 +31,7 @@ module.exports = function(grunt){
     watch: {
       dist1: {
         files: 'src/coffee/*',
-        tasks: 'coffee'
+        tasks: 'coffee min'
       },
       dist2: {
         files: 'src/less/*',
@@ -47,7 +47,7 @@ module.exports = function(grunt){
   });
 
   grunt.loadNpmTasks('grunt-contrib');
-  grunt.registerTask('build', 'coffee less');
+  grunt.registerTask('build', 'coffee less min');
   grunt.registerTask('default', 'coffee less min');
 
 };
