@@ -2,33 +2,55 @@
 (function() {
 
   $(document).ready(function() {
-    var about, detail, gallery, render_gallery, st, thumbnails;
+    var about, detail, gallery, render_thumbnails, show_image, st, thumbnails;
     st = sidetap();
     gallery = $('#gallery');
     thumbnails = gallery.find('.thumbnails');
     detail = $('#detail');
     about = $('#about');
     $('header .menu').click(st.toggle_nav);
-    $('header .info').click(st.toggle_nav);
+    $('header .info').click(function() {
+      return st.show_section(about, {
+        animation: 'upfrombottom'
+      });
+    });
+    $('#about  a.cancel').click(function() {
+      return st.show_section(gallery, {
+        animation: 'downfromtop'
+      });
+    });
     $('#detail a.back').click(function() {
       return st.show_section(gallery, {
         animation: 'infromleft'
       });
     });
     $.getJSON('assets/json/images.json', function(images) {
+      render_thumbnails(st.stp_nav.find('a.selected').text(), images);
       return st.stp_nav.find('nav a').click(function() {
-        return render_gallery(images[$(this).text()]);
+        $(this).addClass('selected').siblings().removeClass('selected');
+        st.toggle_nav();
+        render_thumbnails($(this).text(), images);
+        return false;
       });
     });
-    return render_gallery = function(images) {
+    render_thumbnails = function(section, images) {
+      var img, _i, _len, _ref;
       thumbnails.empty();
-      st.toggle_nav();
+      _ref = images[section];
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        img = _ref[_i];
+        thumbnails.append($("<li><a href='javascript:void(0)'><img src='" + img.url_q + "' alt='' /></a></li>"));
+      }
+      gallery.find('h1').text(section + ' Bears');
       return $('#gallery .thumbnails a').click(function() {
-        st.show_section(detail, {
-          animation: 'infromright'
-        });
-        return detail.find('.stp-content-body img').prop('src', '');
+        return show_image($(this).find('img').prop('src'));
       });
+    };
+    return show_image = function(src) {
+      st.show_section(detail, {
+        animation: 'infromright'
+      });
+      return detail.find('.stp-content-body img').prop('src', src);
     };
   });
 

@@ -132,7 +132,7 @@ header {
     }
 
     &.info span {
-      background: transparent url('../../../../src/img/menu.png') no-repeat;
+      background: transparent url('../../../../src/img/info.png') no-repeat;
     }
   }
 }
@@ -222,6 +222,18 @@ nav {
 
     img {
       width: 100%;
+    }
+  }
+}
+
+#detail {
+  figure {
+    img {
+      width: 100%;
+    }
+
+    figcaption {
+
     }
   }
 }
