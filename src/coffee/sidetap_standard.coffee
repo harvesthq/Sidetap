@@ -29,7 +29,7 @@ class this.SidetapStandard
     if @stp.hasClass("nav-showing") then @set_nav_showing() else @set_nav_hiding()
 
   toggle_nav: (e) =>
-    e.preventDefault()
+    e?.preventDefault()
     @stp_content.on "webkitAnimationEnd", @nav_toggle_complete
     
     if(@stp.hasClass("nav-showing"))

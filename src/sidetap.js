@@ -54,7 +54,9 @@ this.SidetapStandard = (function() {
   };
 
   SidetapStandard.prototype.toggle_nav = function(e) {
-    e.preventDefault();
+    if (e != null) {
+      e.preventDefault();
+    }
     this.stp_content.on("webkitAnimationEnd", this.nav_toggle_complete);
     if (this.stp.hasClass("nav-showing")) {
       this.stp_content.removeClass("showing-nav").addClass("hide-nav");
