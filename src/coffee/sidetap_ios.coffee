@@ -57,40 +57,40 @@ class this.SidetapIos extends SidetapStandard
       @animation_callback()
   
   up_from_bottom: (element) ->
-    element.on("webkitAnimationEnd", @up_from_bottom_complete).removeClass("hidden").addClass("slideup-in")
+    element.on("webkitAnimationEnd", @up_from_bottom_complete).removeClass("hidden").addClass("up-from-bottom")
 
   up_from_bottom_complete: =>
-    @slide_up_previous = $(".stp-content-panel").not(".slideup-in").addClass("hidden")
-    $(".slideup-in").off("webkitAnimationEnd", @up_from_bottom_complete).removeClass("slideup-in")
-    @animation_callback()
-
-  in_from_right: (element) ->
-    $(".stp-content-panel").not(".hidden").addClass("slide-out")
-    element.on("webkitAnimationEnd", @in_from_right_complete).removeClass("hidden").addClass("slide-in")
-
-  in_from_right_complete: =>
-    $(".slide-out").addClass("hidden")
-    $(".slide-in").off("webkitAnimationEnd", @in_from_right_complete).removeClass("slide-in")
-    @animation_callback()
-
-  in_from_left: (element) ->
-    $(".stp-content-panel").not(".hidden").addClass("slide-out reverse")
-    element.on("webkitAnimationEnd", @in_from_left_complete).removeClass("hidden slide-out").addClass("slide-in reverse")
-
-  in_from_left_complete: =>
-    $(".slide-out").removeClass("slide-in reverse").addClass("hidden")
-    $(".slide-in").off("webkitAnimationEnd", @in_from_left_complete).removeClass("slide-in reverse")
+    @slide_up_previous = $(".stp-content-panel").not(".up-from-bottom").addClass("hidden")
+    $(".up-from-bottom").off("webkitAnimationEnd", @up_from_bottom_complete).removeClass("up-from-bottom")
     @animation_callback()
 
   down_from_top: (element) ->
     slide_down = @stp_content.find(".stp-content-panel").not(".hidden")
     element.removeClass("hidden")
-    slide_down.on("webkitAnimationEnd", @down_from_top_complete).addClass("slideup-out-reverse")
-  
+    slide_down.on("webkitAnimationEnd", @down_from_top_complete).addClass("down-to-bottom")
+
   down_from_top_complete: =>
-    slide_down = $(".slideup-out-reverse")
-    slide_down.off("webkitAnimationEnd", @down_from_top_complete).removeClass("slideup-out-reverse").hide()
+    slide_down = $(".down-to-bottom")
+    slide_down.off("webkitAnimationEnd", @down_from_top_complete).removeClass("down-to-bottom").hide()
     slide_down.addClass("hidden").show()
+    @animation_callback()
+
+  in_from_right: (element) ->
+    $(".stp-content-panel").not(".hidden").addClass("slide-out-to-left")
+    element.on("webkitAnimationEnd", @in_from_right_complete).removeClass("hidden").addClass("slide-in-from-right")
+
+  in_from_right_complete: =>
+    $(".slide-out-to-left").addClass("hidden").removeClass("slide-out-to-left")
+    $(".slide-in-from-right").off("webkitAnimationEnd", @in_from_right_complete).removeClass("slide-in-from-right")
+    @animation_callback()
+
+  in_from_left: (element) ->
+    $(".stp-content-panel").not(".hidden").addClass("slide-out-to-right")
+    element.on("webkitAnimationEnd", @in_from_left_complete).removeClass("hidden").addClass("slide-in-from-left")
+
+  in_from_left_complete: =>
+    $(".slide-out-to-right").removeClass("slide-out-to-right").addClass("hidden")
+    $(".slide-in-from-left").off("webkitAnimationEnd", @in_from_left_complete).removeClass("slide-in-from-left")
     @animation_callback()
   
   animation_callback: ->
