@@ -217,14 +217,10 @@ body {
 .slide-out-to-left {
   -webkit-transform: translatex(-100%);
   -webkit-animation-name: slideouttoleft;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-duration: 200ms;
 }
 .slide-in-from-right {
   -webkit-transform: translatex(0);
   -webkit-animation-name: slideinfromright;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-duration: 200ms;
 }
 .slide-out-to-right {
   -webkit-transform: translatex(100%);
@@ -233,6 +229,13 @@ body {
 .slide-in-from-left {
   -webkit-transform: translatex(0);
   -webkit-animation-name: slideinfromleft;
+}
+.slide-in-from-left,
+.slide-out-to-right,
+.slide-in-from-right,
+.slide-out-to-left {
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 200ms;
 }
 @-webkit-keyframes slideinfromright {
   from {
