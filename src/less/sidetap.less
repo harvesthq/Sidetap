@@ -54,8 +54,9 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
+  box-shadow:         0px 0px 15px rgba(0,0,0,0.9);
   -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.9);
-  -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.9);
+  -moz-box-shadow:    0px 0px 15px rgba(0,0,0,0.9);
 }
 .sidetap.nav-showing .stp-overlay {
   display: block;
@@ -71,6 +72,13 @@ html, body {
 }
 .stp-content-panel.hidden {
   display: none;
+}
+
+.stp-fake-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .ios .sidetap {
@@ -100,7 +108,11 @@ html, body {
 }
 .ios .stp-content-body {
   -webkit-transform: translateZ(0);
-  position: absolute; top: 0; left: 0; height: 100%; -webkit-box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  -webkit-box-sizing: border-box;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
@@ -110,12 +122,9 @@ html, body {
   overflow: hidden;
 }
 
-
-
-.sliding {
-  pointer-events: none;
-}
-
+/*
+  Show Navigation Animation
+*/
 .showing-nav {
   -webkit-transform: translateX(@nav_width);
   -moz-transform:    translateX(@nav_width);
@@ -146,6 +155,9 @@ html, body {
   }
 }
 
+/*
+  Hide Navigation Animation
+*/
 .hide-nav {
   -webkit-transform: translateX(0);
   -moz-transform:    translateX(0);
@@ -177,44 +189,23 @@ html, body {
 }
 
 
-
-
-
-
-
-
-/* slide up */
-.slideup-out {
-  -webkit-animation-name: fadeout;
-  -moz-animation-name:    fadeout;
-  -webkit-animation-duration: 250ms;
-  -moz-animation-duration:    250ms;
-}
-
-.slideup-in {
+/* Slide up or Down animation */
+.up-from-bottom {
   -webkit-transform: translateY(0);
   -moz-transform:    translateY(0);
-  -webkit-animation-name: slideinfrombottom;
-  -moz-animation-name:    slideinfrombottom;
+  -webkit-animation-name: upfrombottom;
+  -moz-animation-name:    upfrombottom;
   -webkit-animation-timing-function: ease-out;
   -moz-animation-timing-function:    ease-out;
   -webkit-animation-duration: 250ms;
   -moz-animation-duration:    250ms;
   z-index: 5;
 }
-
-.slideup-in-reverse {
-  -webkit-animation-name: fadein;
-  -moz-animation-name:    fadein;
-  -webkit-animation-duration: 250ms;
-  -moz-animation-duration:    250ms;
-}
-
-.slideup-out-reverse {
+.down-to-bottom {
   -webkit-transform: translateY(100%);
   -moz-transform:    translateY(100%);
-  -webkit-animation-name: slideouttobottom;
-  -moz-animation-name:    slideouttobottom;
+  -webkit-animation-name: downtobottom;
+  -moz-animation-name:    downtobottom;
   -webkit-animation-timing-function: ease-out;
   -moz-animation-timing-function:    ease-out;
   -webkit-animation-duration: 250ms;
@@ -222,7 +213,7 @@ html, body {
   z-index: 5;
 }
 
-@-webkit-keyframes slideinfrombottom {
+@-webkit-keyframes upfrombottom {
   from {
     -webkit-transform: translateY(100%);
   }
@@ -230,17 +221,7 @@ html, body {
     -webkit-transform: translateY(0);
   }
 }
-
-@-moz-keyframes slideinfrombottom {
-  from {
-    -moz-transform: translateY(100%);
-  }
-  to {
-    -moz-transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes slideouttobottom {
+@-webkit-keyframes downtobottom {
   from {
     -webkit-transform: translateY(0);
   }
@@ -249,38 +230,29 @@ html, body {
   }
 }
 
-@-moz-keyframes slideouttobottom {
-  from {
-    -moz-transform: translateY(0);
-  }
-  to {
-    -moz-transform: translateY(100%);
-  }
-}
-
-
-
-
-.slide-out {
+/*
+  Sliding animations
+*/
+.slide-out-to-left {
   -webkit-transform: translateX(-100%);
   -webkit-animation-name: slideouttoleft;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: 200ms;
 }
 
-.slide-in {
+.slide-in-from-right {
   -webkit-transform: translateX(0);
   -webkit-animation-name: slideinfromright;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-duration: 200ms;
 }
 
-.slide-out.reverse {
+.slide-out-to-right {
   -webkit-transform: translateX(100%);
   -webkit-animation-name: slideouttoright;
 }
 
-.slide-in.reverse {
+.slide-in-from-left {
   -webkit-transform: translateX(0);
   -webkit-animation-name: slideinfromleft;
 }
@@ -302,10 +274,4 @@ html, body {
 @-webkit-keyframes slideouttoright {
     from { -webkit-transform: translateX(0); }
     to { -webkit-transform: translateX(100%); }
-}
-.stp-fake-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
 }

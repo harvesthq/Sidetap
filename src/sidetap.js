@@ -120,11 +120,11 @@ this.SidetapIos = (function(_super) {
   SidetapIos.name = 'SidetapIos';
 
   function SidetapIos() {
-    this.down_from_top_complete = __bind(this.down_from_top_complete, this);
-
     this.in_from_left_complete = __bind(this.in_from_left_complete, this);
 
     this.in_from_right_complete = __bind(this.in_from_right_complete, this);
+
+    this.down_from_top_complete = __bind(this.down_from_top_complete, this);
 
     this.up_from_bottom_complete = __bind(this.up_from_bottom_complete, this);
 
@@ -211,34 +211,12 @@ this.SidetapIos = (function(_super) {
   };
 
   SidetapIos.prototype.up_from_bottom = function(element) {
-    return element.on("webkitAnimationEnd", this.up_from_bottom_complete).removeClass("hidden").addClass("slideup-in");
+    return element.on("webkitAnimationEnd", this.up_from_bottom_complete).removeClass("hidden").addClass("up-from-bottom");
   };
 
   SidetapIos.prototype.up_from_bottom_complete = function() {
-    this.slide_up_previous = $(".stp-content-panel").not(".slideup-in").addClass("hidden");
-    $(".slideup-in").off("webkitAnimationEnd", this.up_from_bottom_complete).removeClass("slideup-in");
-    return this.animation_callback();
-  };
-
-  SidetapIos.prototype.in_from_right = function(element) {
-    $(".stp-content-panel").not(".hidden").addClass("slide-out");
-    return element.on("webkitAnimationEnd", this.in_from_right_complete).removeClass("hidden").addClass("slide-in");
-  };
-
-  SidetapIos.prototype.in_from_right_complete = function() {
-    $(".slide-out").addClass("hidden");
-    $(".slide-in").off("webkitAnimationEnd", this.in_from_right_complete).removeClass("slide-in");
-    return this.animation_callback();
-  };
-
-  SidetapIos.prototype.in_from_left = function(element) {
-    $(".stp-content-panel").not(".hidden").addClass("slide-out reverse");
-    return element.on("webkitAnimationEnd", this.in_from_left_complete).removeClass("hidden slide-out").addClass("slide-in reverse");
-  };
-
-  SidetapIos.prototype.in_from_left_complete = function() {
-    $(".slide-out").removeClass("slide-in reverse").addClass("hidden");
-    $(".slide-in").off("webkitAnimationEnd", this.in_from_left_complete).removeClass("slide-in reverse");
+    this.slide_up_previous = $(".stp-content-panel").not(".up-from-bottom").addClass("hidden");
+    $(".up-from-bottom").off("webkitAnimationEnd", this.up_from_bottom_complete).removeClass("up-from-bottom");
     return this.animation_callback();
   };
 
@@ -246,14 +224,36 @@ this.SidetapIos = (function(_super) {
     var slide_down;
     slide_down = this.stp_content.find(".stp-content-panel").not(".hidden");
     element.removeClass("hidden");
-    return slide_down.on("webkitAnimationEnd", this.down_from_top_complete).addClass("slideup-out-reverse");
+    return slide_down.on("webkitAnimationEnd", this.down_from_top_complete).addClass("down-to-bottom");
   };
 
   SidetapIos.prototype.down_from_top_complete = function() {
     var slide_down;
-    slide_down = $(".slideup-out-reverse");
-    slide_down.off("webkitAnimationEnd", this.down_from_top_complete).removeClass("slideup-out-reverse").hide();
+    slide_down = $(".down-to-bottom");
+    slide_down.off("webkitAnimationEnd", this.down_from_top_complete).removeClass("down-to-bottom").hide();
     slide_down.addClass("hidden").show();
+    return this.animation_callback();
+  };
+
+  SidetapIos.prototype.in_from_right = function(element) {
+    $(".stp-content-panel").not(".hidden").addClass("slide-out-to-left");
+    return element.on("webkitAnimationEnd", this.in_from_right_complete).removeClass("hidden").addClass("slide-in-from-right");
+  };
+
+  SidetapIos.prototype.in_from_right_complete = function() {
+    $(".slide-out-to-left").addClass("hidden").removeClass("slide-out-to-left");
+    $(".slide-in-from-right").off("webkitAnimationEnd", this.in_from_right_complete).removeClass("slide-in-from-right");
+    return this.animation_callback();
+  };
+
+  SidetapIos.prototype.in_from_left = function(element) {
+    $(".stp-content-panel").not(".hidden").addClass("slide-out-to-right");
+    return element.on("webkitAnimationEnd", this.in_from_left_complete).removeClass("hidden").addClass("slide-in-from-left");
+  };
+
+  SidetapIos.prototype.in_from_left_complete = function() {
+    $(".slide-out-to-right").removeClass("slide-out-to-right").addClass("hidden");
+    $(".slide-in-from-left").off("webkitAnimationEnd", this.in_from_left_complete).removeClass("slide-in-from-left");
     return this.animation_callback();
   };
 
