@@ -2,9 +2,10 @@
 (function() {
 
   $(document).ready(function() {
-    var about, detail, gallery, st;
+    var about, detail, gallery, render_gallery, st, thumbnails;
     st = sidetap();
     gallery = $('#gallery');
+    thumbnails = gallery.find('.thumbnails');
     detail = $('#detail');
     about = $('#about');
     $('header .menu').click(st.toggle_nav);
@@ -14,13 +15,21 @@
         animation: 'infromleft'
       });
     });
-    return $('#gallery .thumbnails a').click(function() {
-      st.show_section(detail, {
-        animation: 'infromright'
+    $.getJSON('assets/json/images.json', function(images) {
+      return st.stp_nav.find('nav a').click(function() {
+        return render_gallery(images[$(this).text()]);
       });
-      detail.find('.stp-content-body img').prop('src', $(this).find('img').prop('src'));
-      return false;
     });
+    return render_gallery = function(images) {
+      thumbnails.empty();
+      st.toggle_nav();
+      return $('#gallery .thumbnails a').click(function() {
+        st.show_section(detail, {
+          animation: 'infromright'
+        });
+        return detail.find('.stp-content-body img').prop('src', '');
+      });
+    };
   });
 
 }).call(this);
