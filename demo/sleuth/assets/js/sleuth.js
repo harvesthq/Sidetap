@@ -18,6 +18,7 @@
       st.show_section(detail, {
         animation: 'infromright'
       });
+      detail.find('.stp-content-body img').prop('src', $(this).find('img').prop('src'));
       return false;
     });
   });
