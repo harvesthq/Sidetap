@@ -250,11 +250,15 @@ html, body {
 .slide-out-to-right {
   -webkit-transform: translateX(100%);
   -webkit-animation-name: slideouttoright;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 200ms;
 }
 
 .slide-in-from-left {
   -webkit-transform: translateX(0);
   -webkit-animation-name: slideinfromleft;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 200ms;
 }
 @-webkit-keyframes slideinfromright {
     from { -webkit-transform: translateX(100%); }
