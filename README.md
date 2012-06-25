@@ -31,7 +31,7 @@ Sidetap is a simple mobile framework that uses a hidden side navigation. It was 
     ```
     
     **Show_section options:**
-
+    
     - callback: a function to fire when the switch is complete
     - animation: an animation style to use (ios 5+ only). Current animations are upfrombottom, downfromtop, infromright, infromleft
 
