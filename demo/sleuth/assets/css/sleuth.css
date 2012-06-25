@@ -5,6 +5,9 @@
   background: url('../img/ajax-loader.gif') no-repeat center center;
 }
 
+.sleuth-gallery {
+
+}
 .thumbnails {
   overflow: auto;
 }
@@ -24,9 +27,18 @@
   display: none
 }
 
+#detail {
+
+}
+#detail .sleuth-detail {
+
+}
 #detail figure img {
   width: 100%;
 }
 #detail figure.loading img, #detail figure.loading figcaption {
   display: none;
 }
+
+
+
