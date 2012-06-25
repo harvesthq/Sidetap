@@ -26,13 +26,15 @@ Sidetap is a simple mobile framework that uses a hidden side navigation. It was 
 
     Any time you want to show a new section, you just tell Sidetap which content element to animate. Sidetap will take care of clearing the stage using whatever animation is appropriate for the situation.
     
-    ``myapp.sidetap.show_section(element, options)``
+    ```javascript
+    myapp.sidetap.show_section(element, options)
+    ```
     
     **Show_section options:**
 
     - callback: a function to fire when the switch is complete
     - animation: an animation style to use (ios 5+ only). Current animations are upfrombottom, downfromtop, infromright, infromleft
-  
+
 ##Development Roadmap
 
 As with any software project, there's always room for improvement. These are some of the things we'd like to get added to Sidetap in the future.
