@@ -212,9 +212,19 @@ nav {
 
 
 /* Content */
-#gallery { }
 
 .thumbnails {
+  overflow: auto;
+
+  &.loading {
+    height: 3em;
+    background: url('../img/ajax-loader.gif') no-repeat center center;
+
+    li {
+      display: none;
+    }
+  }
+
   li {
     float: left;
     width: 22.75%;
@@ -237,9 +247,7 @@ nav {
       width: 100%;
     }
 
-    figcaption {
-
-    }
+    figcaption { }
   }
 }
 
