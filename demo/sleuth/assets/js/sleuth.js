@@ -2,12 +2,13 @@
 (function() {
 
   $(document).ready(function() {
-    var about, detail, gallery, render_thumbnails, show_image, show_thumbnails, st, thumbnails,
+    var about, detail, gallery, photo, render_thumbnails, show_image, show_thumbnails, st, thumbnails,
       _this = this;
     st = sidetap();
     gallery = $('#gallery');
     thumbnails = gallery.find('.thumbnails');
     detail = $('#detail');
+    photo = detail.find('figure');
     about = $('#about');
     $('header .menu').click(st.toggle_nav);
     $('header .info').click(function() {
@@ -56,23 +57,29 @@
     };
     render_thumbnails = function(images) {
       var i, img, _i, _len;
-      thumbnails.removeClass('loading');
+      thumbnails.removeClass('loading').hide();
       for (i = _i = 0, _len = images.length; _i < _len; i = ++_i) {
         img = images[i];
         thumbnails.append($("<li" + ((i + 1) % 4 === 0 ? ' class="right"' : '') + ">\n  <a href='#'><img src='" + img.url_s + "' alt='" + i + "' /></a>\n</li>"));
       }
+      thumbnails.fadeIn('fast');
       return thumbnails.find('a').click(function() {
         show_image(images[$(this).find('img').prop('alt')]);
         return false;
       });
     };
     return show_image = function(img) {
-      detail.find('.stp-content-body img').replaceWith($("<img src='" + img.url_m + "' />"));
-      detail.find('cite').html(img.title);
-      detail.find('[rel="author"]').prop('href', "http://flickr.com/photos/" + img.owner + "/" + img.id).html(img.ownername);
-      return st.show_section(detail, {
+      st.show_section(detail, {
         animation: 'infromright'
       });
+      photo.addClass('loading');
+      $("<img src='" + img.url_m + "' />").load(function() {
+        photo.removeClass('loading').hide();
+        photo.find('img').replaceWith(this);
+        return photo.fadeIn('fast');
+      });
+      photo.find('cite').html(img.title);
+      return photo.find('[rel="author"]').prop('href', "http://flickr.com/photos/" + img.owner + "/" + img.id).html(img.ownername);
     };
   });
 

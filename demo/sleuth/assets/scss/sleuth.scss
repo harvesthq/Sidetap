@@ -215,16 +215,17 @@ nav {
 }
 
 
-
 /* Content */
+
+.loading {
+  height: 3em;
+  background: url('../img/ajax-loader.gif') no-repeat center center;
+}
 
 .thumbnails {
   overflow: auto;
 
   &.loading {
-    height: 3em;
-    background: url('../img/ajax-loader.gif') no-repeat center center;
-
     li {
       display: none;
     }
@@ -248,11 +249,16 @@ nav {
 
 #detail {
   figure {
+
+    &.loading {
+      img, figcaption {
+        display: none;
+      }
+    }
+
     img {
       width: 100%;
     }
-
-    figcaption { }
   }
 }
 

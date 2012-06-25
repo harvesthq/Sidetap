@@ -5,7 +5,10 @@ $(document).ready () ->
   # content panels
   gallery    = $('#gallery')
   thumbnails = gallery.find('.thumbnails')
+
   detail     = $('#detail')
+  photo      = detail.find('figure')
+
   about      = $('#about')
 
   # navigation structure
@@ -46,7 +49,7 @@ $(document).ready () ->
 
 
   render_thumbnails = (images) ->
-    thumbnails.removeClass 'loading'
+    thumbnails.removeClass('loading').hide()
 
     thumbnails.append $("""
       <li#{if (i + 1) % 4 is 0 then ' class="right"' else ''}>
@@ -54,18 +57,28 @@ $(document).ready () ->
       </li>"""
     ) for img, i in images
 
+    thumbnails.fadeIn('fast')
+
     thumbnails.find('a').click () ->
       show_image(images[$(this).find('img').prop('alt')])
       no
 
 
   show_image = (img) =>
-    detail.find('.stp-content-body img').replaceWith($("<img src='#{img.url_m}' />"))
+    st.show_section(detail, {animation: 'infromright'})
 
-    # show meta info for image
-    detail.find('cite').html(img.title)
-    detail.find('[rel="author"]')
+    photo.addClass('loading')
+
+    $("<img src='#{img.url_m}' />").load(() ->
+      photo.removeClass('loading').hide()
+
+      photo.find('img').replaceWith(this)
+
+      photo.fadeIn('fast')
+    )
+
+    # show meta info for the current image
+    photo.find('cite').html(img.title)
+    photo.find('[rel="author"]')
           .prop('href', "http://flickr.com/photos/#{img.owner}/#{img.id}")
           .html(img.ownername)
-
-    st.show_section(detail, {animation: 'infromright'})
