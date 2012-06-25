@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+
+#container {
+  margin: 0 auto;
+  padding-right: 450px;
+  position: relative;
+  width: 980px;
+}
+
+#demo {
+  background: url(iphone.png);
+  width: 410px;
+  height: 782px;
+  padding: 149px 0 0 45px;
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  background: url(sidetap-logo.png);
+  overflow: hidden;
+  height: 292px;
+  width: 414px;
+  margin: 0 auto;
+  text-indent: 100%;
+  line-height: 414px;
+}
