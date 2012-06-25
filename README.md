@@ -35,15 +35,6 @@ Sidetap is a simple mobile framework that uses a hidden side navigation. It was 
     - callback: a function to fire when the switch is complete
     - animation: an animation style to use (ios 5+ only). Current animations are upfrombottom, downfromtop, infromright, infromleft
 
-##Development Roadmap
-
-As with any software project, there's always room for improvement. These are some of the things we'd like to get added to Sidetap in the future.
-
-- More iOS-like header animations
-- Better touch support
-- Leaving side navigation open on larger screen devices (hello, iPad)
-- Bringing polished version to more devices.
-
 ##Building Files Using Grunt
 
 Sidetap's javascript and css are written using coffeescript and less respectively. Each of these file types must be compiled before they can be used by the browser. To do this easily, we're using the excellent [grunt build system](https://github.com/cowboy/grunt). To use the build system, you must first install [node](http://nodejs.org/) and [npm](http://npmjs.org/).
@@ -56,3 +47,12 @@ There are a few available commands.
 
 - ``grunt`` or ``grunt build``: build the css & js files
 - ``grunt watch``: build the css & js files whenever the less or coffee files change
+
+##Development Roadmap
+
+As with any software project, there's always room for improvement. These are some of the things we'd like to get added to Sidetap in the future.
+
+- More iOS-like header animations
+- Better touch support
+- Leaving side navigation open on larger screen devices (hello, iPad)
+- Bringing polished version to more devices.
