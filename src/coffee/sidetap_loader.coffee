@@ -3,5 +3,5 @@
 ###
 
 this.sidetap = () ->
-  ios5 = navigator.userAgent.toLowerCase().match(/(iphone|ipod|ipad)/) && window.SharedWorker
+  ios5 = navigator.userAgent.match(/^((?!android).)*webkit.*$/i) && window.SharedWorker
   return if ios5 then new SidetapIos() else new SidetapStandard()
