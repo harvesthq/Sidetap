@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link type="text/css" rel="stylesheet" media="screen" href="docs/style.css" />
+</head>
+<body>
+<div id="container">
+  <header>
+    <h1>This is Sidetap</h1>
+  </header>
+  <div role="main" id="main">
+    <div id="content">
+      <p style="font-size: 1.5em;">Sidetap is a simple mobile framework that uses a hidden side navigation. It was inspired by Sparrow, Facebook and a number of apps that use the same navigation style.</p>
+
+      <h2 id="ughanothermobileframework">Ugh, another mobile framework?</h2>
+
+      <p>We feel like Sidetap fills a need that&#8217;s not represented in the mobile space presently. Here are some of the specific things we like about it:</p>
+
+      <ul>
+      <li><strong>Side-navigation:</strong> It&#8217;s the whole reason we built Sidetap.</li>
+      <li><strong>Lightweight:</strong> Sidetap&#8217;s JS weighs in at about 10k&#8230; uncompressed and unminified. With minification and gzip, you&#8217;re looking at a 2k asset. Not bad.</li>
+      <li><strong>Device Support:</strong> Sidetap starts by delivering a solid baseline experience and only adds the bells and whistles for iOS 5+. This allows us to support tons of devices without maxing out file size.</li>
+      <li><strong>Makes Choices For You:</strong> Sidetap demands a very specific html structure. This lets you focus on content instead of worrying about containers.</li>
+      <li><strong>Simple:</strong> Sidetap doesn&#8217;t try and do too much. Its game is animating between content panels and it tries not to do too much else.</li>
+      </ul>
+
+      <h2 id="howtousesidetap">How to Use Sidetap</h2>
+
+      <ol>
+      <li><p><strong>Build the HTML Structure</strong></p>
+
+      <p>Sidetap uses a very specific HTML structure which can be found in the <a href="">skelton.html</a> file</p></li>
+      <li><p><strong>Instantiate Sidetap</strong></p>
+
+      <p>Create a reference to Sidetap from within your app.</p>
+
+      <p><code>myapp.sidetap = new sidetap()</code></p></li>
+      <li><p><strong>Call Animations</strong></p>
+
+      <p>Any time you want to show a new section, you just tell Sidetap which content element to animate. Sidetap will take care of clearing the stage using whatever animation is appropriate for the situation.</p>
+
+      <p><code>myapp.sidetap.show_section(element, options)</code></p>
+
+      <p><strong>Show_section options:</strong></p>
+
+      <ul>
+      <li>callback: a function to fire when the switch is complete</li>
+      <li>animation: an animation style to use (ios 5+ only). Current animations are upfrombottom, downfromtop, infromright, infromleft</li>
+      </ul></li>
+      </ol>
+
+      <h2 id="developmentroadmap">Development Roadmap</h2>
+
+      <p>As with any software project, there&#8217;s always room for improvement. These are some of the things we&#8217;d like to get added to Sidetap in the future.</p>
+
+      <ul>
+      <li>More iOS-like header animations</li>
+      <li>Better touch support</li>
+      <li>Leaving side navigation open on larger screen devices (hello, iPad)</li>
+      <li>Bringing polished version to more devices.</li>
+      </ul>
+
+      <h2 id="wherecanigetit">Where can I get it</h2>
+
+      <p><a href="https://github.com/harvesthq/sidetap">On Github, of course.</a></p>
+
+      <h2 id="canicontribute">Can I Contribute</h2>
+
+      <p>Yes, please. Here are some guidelines:</p>
+
+      <h2 id="credits">Credits</h2>
+
+      <ul>
+      <li>Sidetap was built for <a href="http://www.getharvest.com/">Harvest</a></li>
+      <li>Concept and development by <a href="http://twitter.com/pfiller">Patrick Filler</a></li>
+      <li>Primary design and theme was done by <a href="http://twitter.com/mlettini">Matthew Lettini</a></li>
+      <li>Demo app and other contributions by <a href="http://twitter.com/jkintscher">Joschka Kintscher</a></li>
+      </ul>
+
+      <h2 id="blatantrecruitingschpeal">Blatant Recruiting Schpeal</h2>
+
+      <p>Want to work on cool, open source projects like this? <a href="http://www.getharvest.com/careers">Join us</a>.</p>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+</div>
+<div id="demo">
+  <iframe src="demo/sleuth/index.html" width="320" height="482" frameborder="0"></iframe>
+</div>
+<script type="text/javascript" src="lib/jquery.1.7.2.js"></script>
+<script type="text/javascript" src="docs/sidedocs.js"></script>
+</body>
+</html>
