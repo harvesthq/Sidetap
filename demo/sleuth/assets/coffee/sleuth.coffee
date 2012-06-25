@@ -31,15 +31,25 @@ $(document).ready () ->
 
   render_thumbnails = (section, images) ->
     thumbnails.empty()
-    thumbnails.append($("<li><a href='javascript:void(0)'><img src='#{img.url_s}' alt='' /></a></li>")) for img in images[section]
+
+    thumbnails.append $("""
+      <li#{if ( i + 1 ) % 4 is 0 then ' class="right"' else ''}>
+        <a href='javascript:void(0)'>
+          <img src='#{img.url_s}' alt='#{i}' />
+        </a>
+      </li>""") for img, i in images[section]
 
     gallery.find('h1').text(section + ' Bears')
 
-    # gallery interaction
     $('#gallery .thumbnails a').click () ->
-      show_image($(this).find('img').prop('src'))
+      show_image images[section][$(this).find('img').prop('alt')]
 
 
-  show_image = (src) ->
+  show_image = (img) ->
+    detail.find('.stp-content-body img').prop('src', img.url_m)
+    detail.find('cite').html(img.title)
+    detail.find('[rel="author"]')
+          .prop('href', "http://flickr.com/photos/#{img.owner}/#{img.id}")
+          .html(img.ownername)
+
     st.show_section(detail, {animation: 'infromright'})
-    detail.find('.stp-content-body img').prop('src', src.replace("_s.jpg", "_m.jpg"))

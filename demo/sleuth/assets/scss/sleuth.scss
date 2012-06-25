@@ -217,8 +217,13 @@ nav {
 .thumbnails {
   li {
     float: left;
-    width: 21%;
-    margin: 2%;
+    width: 22.75%;
+    margin: 0 3% 3% 0;
+    line-height: 0;
+
+    &.right {
+      margin-right: 0;
+    }
 
     img {
       width: 100%;

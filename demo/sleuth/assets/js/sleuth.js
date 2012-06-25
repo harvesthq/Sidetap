@@ -34,23 +34,25 @@
       });
     });
     render_thumbnails = function(section, images) {
-      var img, _i, _len, _ref;
+      var i, img, _i, _len, _ref;
       thumbnails.empty();
       _ref = images[section];
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        img = _ref[_i];
-        thumbnails.append($("<li><a href='javascript:void(0)'><img src='" + img.url_s + "' alt='' /></a></li>"));
+      for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
+        img = _ref[i];
+        thumbnails.append($("<li" + ((i + 1) % 4 === 0 ? ' class="right"' : '') + ">\n  <a href='javascript:void(0)'>\n    <img src='" + img.url_s + "' alt='" + i + "' />\n  </a>\n</li>"));
       }
       gallery.find('h1').text(section + ' Bears');
       return $('#gallery .thumbnails a').click(function() {
-        return show_image($(this).find('img').prop('src'));
+        return show_image(images[section][$(this).find('img').prop('alt')]);
       });
     };
-    return show_image = function(src) {
-      st.show_section(detail, {
+    return show_image = function(img) {
+      detail.find('.stp-content-body img').prop('src', img.url_m);
+      detail.find('cite').html(img.title);
+      detail.find('[rel="author"]').prop('href', "http://flickr.com/photos/" + img.owner + "/" + img.id).html(img.ownername);
+      return st.show_section(detail, {
         animation: 'infromright'
       });
-      return detail.find('.stp-content-body img').prop('src', src.replace("_s.jpg", "_m.jpg"));
     };
   });
 
