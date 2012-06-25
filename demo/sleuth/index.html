@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset='utf-8' />
     <title>Sleuth</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link type="text/css" rel="stylesheet" media="screen" href="../../src/sidetap.css">
-    <link type="text/css" rel="stylesheet" media="screen" href="sleuth.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link type="text/css" rel="stylesheet" media="screen" href="../../src/sidetap.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="assets/css/sleuth.css" />
   </head>
   <body>
     <div class="sidetap stp-full-height">
+
       <div class="stp-nav stp-full-height">
-        <div><header class="header-navigation">
-        <img height="32" src="profile-pic.png" width="32">
-        <h4>Hello Brutus!</h4>
-        </header>
-        <nav>
-        <a class="nav-timesheets selected" href="/timesheet">Timesheets</a>
+        <div>
+          <header class="header-navigation">
+            <img src="assets/img/profile-pic.png" height="32" width="32" />
+            <h4>Hello Brutus!</h4>
+          </header>
 
-        <a class="nav-team-status" href="/timesheet/team">Team Status</a>
-
-        <a class="nav-changelog deemphasize" href="/timesheet/mobile/changelog">
-        What's New?
-        <span class="version"></span>
-        </a>
-        <a class="nav-feedback deemphasize" href="/timesheet/feedback">Send Us Feedback</a>
-        <a class="nav-desktop-version classic-link deemphasize" href="/daily">Desktop Version</a>
-        <a class="nav-logout classic-link deemphasize" href="/account/logout">Sign Out</a>
-        </nav>
+          <nav>
+            <a href="#" class="selected">Black</a>
+            <a href="#">Grizzly</a>
+            <a href="#">Kodiak</a>
+            <a href="#">Panda</a>
+            <a href="#">Polar</a>
+            <a href="#">Sun</a>
+          </nav>
         </div>
       </div>
+
       <div class="stp-content stp-full-height" id="content">
         <header class="stp-fake-header">&nbsp;</header>
         <div class="stp-overlay nav-toggle">&nbsp;</div>
-        <div class="stp-content-panel" style="">
-          <header class="header-">
-            <a class="header-button right js-show-add-time-form" href="javascript:void(0)">
-              <span class="add">+</span>
-            </a>
-            <a class="header-button js-nav-button" href="javascript:void(0)">
-              <span class="menu">Menu</span>
-            </a>
-        
-            <h1>Sleuth</h1>
+
+        <!-- Gallery -->
+        <div class="stp-content-panel" id="gallery">
+          <header>
+            <a href="javascript:void(0)" class="header-button icon menu"><span>Menu</span></a>
+            <a href="javascript:void(0)" class="header-button icon info right"><span>Info</span></a>
+            <h1></h1>
           </header>
-          
+
           <div class="stp-content-frame">
             <div class="stp-content-body">
-              <div class="container">
+              <div>
+                <ul class="thumbnails"></ul>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Detail page -->
+        <div class="stp-content-panel hidden" id="detail">
+          <header>
+            <a href="javascript:void(0)" class="header-button back"><span>Back</span></a>
+            <h1></h1>
+          </header>
+
+          <div class="stp-content-frame">
+            <div class="stp-content-body">
+              <div>
+                <figure>
+                  <img src="" alt="" />
+                  <figcaption>
+                    <cite></cite>
+                    <address class="author">by <a href="#" rel="author"></a></address>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About page -->
+        <div class="stp-content-panel hidden" id="about">
+          <header>
+            <a href="javascript:void(0)" class="header-button cancel"><span>Cancel</span></a>
+            <h1>SleuthApp</h1>
+          </header>
+
+          <div class="stp-content-frame">
+            <div class="stp-content-body">
+              <div>
+                Good luck figuring stuff out!
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-    </div>
+
     <script type="text/javascript" src="../../lib/jquery.1.7.2.js"></script>
     <script type="text/javascript" src="../../src/sidetap.js"></script>
-    <script>
-      var st = sidetap();
-      $(".js-nav-button").on("click",st.toggle_nav)
-      console.dir(st);
-    </script>
+    <script type="text/javascript" src="assets/js/sleuth.js"></script>
   </body>
 </html>
