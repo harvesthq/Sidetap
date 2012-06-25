@@ -2,6 +2,8 @@
 
 Sidetap is a simple mobile framework that uses a hidden side navigation. It was inspired by Sparrow, Facebook and a number of apps that use the same navigation style.
 
+##Features
+
 - **Side-navigation:** It's the whole reason we built Sidetap.
 - **Lightweight:** Sidetap's JS weighs in at about 10k... uncompressed and unminified. With minification and gzip, you're looking at a 2k asset. Not bad.
 - **Device Support:** Sidetap starts by delivering a solid baseline experience and only adds the bells and whistles for iOS 5+. This allows us to support tons of devices without maxing out file size.
