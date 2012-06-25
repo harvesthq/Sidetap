@@ -24,7 +24,8 @@ module.exports = function(grunt){
     less: {
       compile: {
         files: {
-          'src/sidetap.css': 'src/less/sidetap.less'
+          'src/sidetap.css': 'src/less/sidetap.less',
+          'src/theme/default/default.css': 'src/theme/default/default.less'
         }
       }
     },
@@ -35,6 +36,10 @@ module.exports = function(grunt){
       },
       dist2: {
         files: 'src/less/*',
+        tasks: 'less'
+      },
+      dist3: {
+        files: 'src/theme/default/*.less',
         tasks: 'less'
       }
     },
