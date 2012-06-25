@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Sidetap HTML Skeleton</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link type="text/css" rel="stylesheet" media="screen" href="sidetap.css" />
+  </head>
+  <body>
+    <div class="sidetap stp-full-height">
+      <div class="stp-nav stp-full-height">
+        <div>
+          <header class="header-navigation">
+            <h4>Navigation Header</h4>
+          </header>
+
+          <nav>
+            <a href="#" class="selected">Selected Nav Item</a>
+            <a href="#">Nav Item</a>
+            <a href="#">Nav Item</a>
+            <a href="#">Nav Item</a>
+            <a href="#">Nav Item</a>
+            <a href="#">Nav Item</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="stp-content stp-full-height" id="content">
+        <header class="stp-fake-header">&nbsp;</header>
+        <div class="stp-overlay nav-toggle">&nbsp;</div>
+
+        <!-- Content Divs Look Like This -->
+        <div class="stp-content-panel">
+          <header>
+            <a href="javascript:void(0)" class="header-button icon menu"><span>Menu</span></a>
+            <h1>Header Text</h1>
+          </header>
+          <div class="stp-content-frame">
+            <div class="stp-content-body">
+              <div>
+                Content goes here.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End content Div -->
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../lib/jquery.1.7.2.js"></script>
+    <script type="text/javascript" src="sidetap.js"></script>
+    <script>
+      var st = sidetap();
+      $(".js-nav-button").on("click",st.toggle_nav)
+    </script>
+  </body>
+</html>
