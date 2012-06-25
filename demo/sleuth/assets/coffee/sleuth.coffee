@@ -54,8 +54,9 @@ $(document).ready () ->
       </li>"""
     ) for img, i in images
 
-    $('#gallery .thumbnails a').click () ->
+    thumbnails.find('a').click () ->
       show_image(images[$(this).find('img').prop('alt')])
+      no
 
 
   show_image = (img) =>

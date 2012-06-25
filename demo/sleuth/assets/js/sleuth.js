@@ -61,8 +61,9 @@
         img = images[i];
         thumbnails.append($("<li" + ((i + 1) % 4 === 0 ? ' class="right"' : '') + ">\n  <a href='#'><img src='" + img.url_s + "' alt='" + i + "' /></a>\n</li>"));
       }
-      return $('#gallery .thumbnails a').click(function() {
-        return show_image(images[$(this).find('img').prop('alt')]);
+      return thumbnails.find('a').click(function() {
+        show_image(images[$(this).find('img').prop('alt')]);
+        return false;
       });
     };
     return show_image = function(img) {

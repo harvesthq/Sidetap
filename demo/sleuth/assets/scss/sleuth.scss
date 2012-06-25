@@ -3,7 +3,6 @@
 
 body {
   background: #e4e4e4 url('../../../../src/img/bg.jpg') repeat;
-  @include background-size(200px 200px);
   color: #222222;
   font-family: 'Helvetica Neue', 'Helvetica-Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -11,6 +10,7 @@ body {
   text-shadow: 0 1px 0 white;
   word-wrap: break-word;
   -webkit-text-size-adjust: none;
+  @include background-size(200px 200px);
 }
 
 h1 {
@@ -67,23 +67,23 @@ header {
   border-bottom: 1px solid #823010;
 
   color: white;
-  @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3));
   background: #f05800;
-  @include background(linear-gradient(#fb8020, #f05800));
-  -webkit-transform: translateZ(0);
   text-align: center;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-  -webkit-transform: translateZ(0);
+
+  @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3));
+  @include background(linear-gradient(#fb8020, #f05800));
+  @include transform(translateZ(0));
+  @include text-shadow(0 -1px 0 rgba(0, 0, 0, 0.4));
 
 
   &.header-navigation {
-    background: #222;
-    @include background(linear-gradient(#3c3c3c, #222222));
     border-color: black;
     color: #999999;
     font-size: 11px;
     text-align: left;
+    background: #222;
     @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, 0.14));
+    @include background(linear-gradient(#3c3c3c, #222222));
 
     & > img {
       display: inline-block;
@@ -95,23 +95,26 @@ header {
 
 
   & > .header-button {
-    background: #e24000;
-    @include background(linear-gradient(#f36501, #e24000));
+    position: absolute;
+    top: 7px;
+    left: 5px;
+
+    height: 28px;
+    padding: 0 8px;
     border: 1px solid #bc3a00;
+
     color: white;
     font-size: 13px;
     font-weight: bold;
-    height: 28px;
-    left: 5px;
     line-height: 26px;
-    padding: 0 8px;
-    position: absolute;
-    -webkit-transform: translateZ(0);
-    top: 7px;
     text-decoration: none;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+
+    background: #e24000;
     @include border-radius(5px);
     @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25));
+    @include background(linear-gradient(#f36501, #e24000));
+    @include transform(translateZ(0));
 
     &.right {
       left: auto;
@@ -119,12 +122,13 @@ header {
     }
 
     &.icon span {
-      @include background-size(17px 15px);
       display: inline-block;
+      width: 17px;
       height: 15px;
       margin: 6px 2px 0;
+
       text-indent: -9999px;
-      width: 17px;
+      @include background-size(17px 15px);
     }
 
     &.menu span {
@@ -139,26 +143,27 @@ header {
 
 
 nav {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   display: block;
   padding-top: 44px;
-  -webkit-transform: translateZ(0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  @include transform(translateZ(0));
 
   & > a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    color: #cccccc;
+    position: relative;
     display: block;
     height: 42px;
+    padding: 0 0 0 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin: 0;
+
+    color: #cccccc;
     font-size: 17px;
     font-weight: bold;
     line-height: 40px;
-    margin: 0;
-    padding: 0 0 0 10px;
-    position: relative;
-    -webkit-transform: translateZ(0);
     text-decoration: none;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    @include transform(translateZ(0));
 
     &:after {
       position: absolute;
@@ -171,8 +176,8 @@ nav {
 
       content: ' ';
       opacity: 0.3;
-      -webkit-transform: translateZ(0);
       background: transparent url('../../../../src/img/arrow-right-white.png') no-repeat left center;
+      @include transform(translateZ(0));
       @include background-size(19px 14px);
     }
 
@@ -180,8 +185,8 @@ nav {
       border-bottom: 1px solid rgba(0, 0, 0, 0.4);
       border-top: 1px solid rgba(255, 255, 255, 0.2);
 
-      @include background(linear-gradient(#666, #555));
       color: white;
+      @include background(linear-gradient(#666, #555));
 
       &:after {
         opacity: 1;
@@ -203,10 +208,10 @@ nav {
 }
 
 .stp-nav {
+  width: 272px;
+  border-right: 1px solid black;
   background: #444444 url('../../../../src/img/bg-gray.jpg') repeat;
   @include background-size(200px 200px);
-  border-right: 1px solid black;
-  width: 272px;
 }
 
 
