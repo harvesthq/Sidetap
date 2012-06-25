@@ -19,18 +19,6 @@ $(document).ready () ->
   $('#detail a.back'  ).click () -> st.show_section(gallery, {animation: 'infromleft'})
 
 
-  $.getJSON 'assets/json/images.json', (images) ->
-
-    # show the default section
-    show_thumbnails(st.stp_nav.find('a.selected').text(), images)
-
-    st.stp_nav.find('nav a').click () ->
-      $(this).addClass('selected').siblings().removeClass('selected')
-      st.toggle_nav()
-
-      show_thumbnails($(this).text(), images)
-      no
-
 
   show_thumbnails = (section, images) ->
     thumbnails.empty().addClass('loading')
@@ -82,3 +70,14 @@ $(document).ready () ->
     photo.find('[rel="author"]')
           .prop('href', "http://flickr.com/photos/#{img.owner}/#{img.id}")
           .html(img.ownername)
+
+
+  # show the default section
+  show_thumbnails(st.stp_nav.find('a.selected').text(), images)
+
+  st.stp_nav.find('nav a').click () ->
+    $(this).addClass('selected').siblings().removeClass('selected')
+    st.toggle_nav()
+
+    show_thumbnails($(this).text(), images)
+    no

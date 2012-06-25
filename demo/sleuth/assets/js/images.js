@@ -1,4 +1,4 @@
-{
+images = {
   "Black": [
     { "id": "7440889274", "owner": "48014585@N00", "secret": "65ba51dcbc", "server": "5235", "farm": 6, "title": "Black bear", "ispublic": 1, "isfriend": 0, "isfamily": 0, 
       "description": { "_content": "Ten a.m.  This bear apparently did not get the memo that they only visit feeders at night. Notice that the feeder is GONE. It knocked it down yesterday afternoon, so no more bird feeding for a while." }, "ownername": "Laura Erickson", "url_s": "http:\/\/farm6.staticflickr.com\/5235\/7440889274_65ba51dcbc_s.jpg", "height_s": "240", "width_s": "169", "url_m": "http:\/\/farm6.staticflickr.com\/5235\/7440889274_65ba51dcbc_m.jpg", "height_m": "500", "width_m": "353" },
@@ -400,4 +400,4 @@
     { "id": "7386300310", "owner": "46274038@N00", "secret": "c1ab82eaff", "server": "8024", "farm": 9, "title": "マレーグマの赤ちゃん「フジ」＠上野動物園", "ispublic": 1, "isfriend": 0, "isfamily": 0, 
       "description": { "_content": "" }, "ownername": "makitani", "url_s": "http:\/\/farm9.staticflickr.com\/8024\/7386300310_c1ab82eaff_s.jpg", "height_s": "180", "width_s": "240", "url_m": "http:\/\/farm9.staticflickr.com\/8024\/7386300310_c1ab82eaff_m.jpg", "height_m": "375", "width_m": "500" }
   ]
-}
+};
