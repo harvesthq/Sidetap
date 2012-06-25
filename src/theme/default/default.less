@@ -1,121 +1,37 @@
 /*
   Reset Stuff
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-input,
-textarea,
-button,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font-family: inherit;
   margin: 0;
   padding: 0;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -123,63 +39,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
-  Sidetap Default Theme
-*/
-body {
-  background: #e4e4e4 url('img/bg.jpg') repeat;
-  -moz-background-size: 200px 200px;
-  -webkit-background-size: 200px 200px;
-  -o-background-size: 200px 200px;
-  background-size: 200px 200px;
-  color: #222222;
-  font-family: "Helvetica Neue", "Helvetica-Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: normal;
-  text-shadow: 0 1px 0 white;
-  word-wrap: break-word;
-  -webkit-text-size-adjust: none;
-}
-/* line 32, sass/mobile.sass */
-h1 {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 42px;
-}
-/* line 37, sass/mobile.sass */
-h2 {
-  color: #444444;
-  font-size: 17px;
-  font-weight: normal;
-  line-height: 43px;
-}
-/* line 42, sass/mobile.sass */
-h2 strong {
-  color: #222222;
-}
-/* line 44, sass/mobile.sass */
-h3 {
-  color: #666666;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 18px;
-  padding: 10px;
-}
-/* line 50, sass/mobile.sass */
-h4 {
-  color: white;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 18px;
-  vertical-align: middle;
-}
-/* line 58, sass/mobile.sass */
-a {
-  color: #444444;
-}
-/* line 73, sass/mobile.sass */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .stp-content {
   background: #e4e4e4 url('img/bg.jpg') repeat;
   -moz-background-size: 200px 200px;
@@ -191,7 +91,6 @@ a {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 78, sass/mobile.sass */
 .stp-content-panel {
   background: #e4e4e4 url('img/bg.jpg') repeat;
   -moz-background-size: 200px 200px;
@@ -199,7 +98,8 @@ a {
   -o-background-size: 200px 200px;
   background-size: 200px 200px;
 }
-/* line 86, sass/mobile.sass */
+
+
 header {
   background: #f05800;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fb8020), color-stop(100%, #f05800));
@@ -213,18 +113,18 @@ header {
   color: white;
   display: block;
   height: 43px;
-  -webkit-transform: translatez(0);
+  -webkit-transform: translateZ(0);
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
   width: 100%;
   z-index: 1;
-  -webkit-transform: translatez(0);
+  -webkit-transform: translateZ(0);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
-/* line 100, sass/mobile.sass */
+
 header > .header-button {
   background: #e24000;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f36501), color-stop(100%, #e24000));
@@ -242,7 +142,7 @@ header > .header-button {
   line-height: 26px;
   padding: 0 8px;
   position: absolute;
-  -webkit-transform: translatez(0);
+  -webkit-transform: translateZ(0);
   top: 7px;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
@@ -257,12 +157,10 @@ header > .header-button {
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
 }
-/* line 118, sass/mobile.sass */
 header > .header-button > .add {
   font-size: 28px;
   line-height: 20px;
 }
-/* line 121, sass/mobile.sass */
 header > .header-button > .menu {
   background: transparent url('img/menu.png') no-repeat;
   -moz-background-size: 17px 15px;
@@ -275,12 +173,10 @@ header > .header-button > .menu {
   text-indent: -9999px;
   width: 17px;
 }
-/* line 129, sass/mobile.sass */
 header > .header-button.right {
   left: auto;
   right: 5px;
 }
-/* line 132, sass/mobile.sass */
 header > .header-button.special {
   background: #d4d4d4;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f4f4f4), color-stop(100%, #d4d4d4)) !important;
@@ -297,6 +193,7 @@ header > .header-button.special {
   -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important;
 }
+
 /* line 203, sass/mobile.sass */
 header.header-navigation {
   background: #222222;
@@ -318,6 +215,7 @@ header.header-navigation {
 .header-navigation h4 {
   margin: 13px 10px;
 }
+
 /* line 233, sass/mobile.sass */
 .button-gray {
   border: 1px solid #aaaaaa;
@@ -348,6 +246,7 @@ header.header-navigation {
   -o-box-shadow: inset 0 1px 0 white;
   box-shadow: inset 0 1px 0 white;
 }
+
 /* line 240, sass/mobile.sass */
 .button-green {
   border: 1px solid #aaaaaa;
@@ -380,6 +279,7 @@ header.header-navigation {
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
+
 /* line 249, sass/mobile.sass */
 .button-blue {
   border: 1px solid #aaaaaa;
@@ -412,6 +312,7 @@ header.header-navigation {
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
+
 /* line 258, sass/mobile.sass */
 .button-deemphasize {
   border: 1px solid #aaaaaa;
@@ -438,6 +339,7 @@ header.header-navigation {
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0);
 }
+
 /* line 266, sass/mobile.sass */
 .button-loading {
   border: 1px solid #aaaaaa;
@@ -469,99 +371,9 @@ header.header-navigation {
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
-/* line 278, sass/mobile.sass */
-.stp-nav {
-  background: #444444 url('img/bg-gray.jpg') repeat;
-  -moz-background-size: 200px 200px;
-  -webkit-background-size: 200px 200px;
-  -o-background-size: 200px 200px;
-  background-size: 200px 200px;
-  border-right: 1px solid black;
-  width: 272px;
-}
-/* line 284, sass/mobile.sass */
-nav {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  display: block;
-  padding-top: 44px;
-  -webkit-transform: translatez(0);
-}
-/* line 289, sass/mobile.sass */
-nav > a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  color: #cccccc;
-  display: block;
-  height: 42px;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 40px;
-  margin: 0;
-  padding: 0 0 0 10px;
-  position: relative;
-  -webkit-transform: translatez(0);
-  text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-}
-/* line 304, sass/mobile.sass */
-nav > a > span {
-  color: #777777;
-  font-size: 14px;
-  font-weight: normal;
-  padding-left: 5px;
-}
-/* line 309, sass/mobile.sass */
-nav > a:after {
-  background: transparent url('img/arrow-right-white.png') no-repeat left center;
-  -moz-background-size: 19px 14px;
-  -webkit-background-size: 19px 14px;
-  -o-background-size: 19px 14px;
-  background-size: 19px 14px;
-  content: " ";
-  display: block;
-  height: 41px;
-  opacity: 0.3;
-  position: absolute;
-  -webkit-transform: translatez(0);
-  right: 0;
-  top: 0;
-  width: 19px;
-}
-/* line 321, sass/mobile.sass */
-nav > a.selected {
-  background: #555555;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #555555));
-  background: -webkit-linear-gradient(top, #666666, #555555);
-  background: -moz-linear-gradient(top, #666666, #555555);
-  background: -o-linear-gradient(top, #666666, #555555);
-  background: -ms-linear-gradient(top, #666666, #555555);
-  background: linear-gradient(top, #666666, #555555);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
-}
-/* line 327, sass/mobile.sass */
-nav > a.selected > span {
-  color: #999999;
-}
-/* line 329, sass/mobile.sass */
-nav > a.selected:after {
-  opacity: 1;
-}
-/* line 331, sass/mobile.sass */
-nav > a.deemphasize {
-  color: #888888;
-  font-size: 14px;
-  font-weight: normal;
-}
-/* line 335, sass/mobile.sass */
-nav > a.deemphasize:after {
-  opacity: 0;
-}
-/* line 337, sass/mobile.sass */
-nav > a.deemphasize.selected {
-  color: white;
-}
+
+
+
 /* line 385, sass/mobile.sass */
 .container {
   font-size: 13px;
@@ -574,9 +386,213 @@ nav > a.deemphasize.selected {
 .container.team-status {
   padding-top: 0px;
 }
+
 /* line 394, sass/mobile.sass */
 section {
   margin: 10px 0px;
   position: relative;
-  -webkit-transform: translatez(0);
+  -webkit-transform: translateZ(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  Sidetap Default Theme
+  Demo app: Sleuth
+*/
+
+
+
+
+
+body {
+  background: red;
+  color: #222;
+  font-family: 'Helvetica Neue', 'Helvetica-Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  text-shadow: 0 1px 0 white;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+}
+
+h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 42px;
+}
+h2 {
+  color: #444;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 43px;
+  strong {
+    color: #222;
+  }
+}
+h3 {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 10px;
+}
+h4 {
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+a {
+  color: #444;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+header {
+  background: #222;
+  border-bottom: 1px solid #823010;
+  color: white;
+  display: block;
+  height: 43px;
+  position: absolute;
+  -webkit-transform: translateZ(0);
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  width: 100%;
+  z-index: 1;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  .header-button {
+    background: #666;
+    border: 1px solid #bc3a00;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    height: 28px;
+    left: 5px;
+    line-height: 26px;
+    padding: 0 8px;
+    position: absolute;
+    -webkit-transform: translateZ(0);
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    top: 7px;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
+    &.right {
+      left: auto;
+      right: 5px;
+    }
+    &.icon span {
+      display: inline-block;
+      height: 15px;
+      margin: 6px 2px 0;
+      text-indent: -9999px;
+      width: 17px;
+      -webkit-background-size: 17px 15px;
+    }
+    &.menu span {
+      background: transparent url('../../../../src/img/menu.png') no-repeat;
+    }
+    &.info span {
+      background: transparent url('../../../../src/img/info.png') no-repeat;
+    }
+  }
+}
+
+
+nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: block;
+  padding: 0px
+  -webkit-transform: translateZ(0);
+  & > a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #cccccc;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    height: 42px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 0 0 10px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    &:after {
+      background: transparent url('../../../../src/img/arrow-right-white.png') no-repeat left center;
+      content: ' ';
+      display: block;
+      height: 41px;
+      opacity: 0.3;
+      position: absolute;
+      -webkit-transform: translateZ(0);
+      right: 0;
+      top: 0;
+      width: 19px;
+      -webkit-background-size: 19px 14px;
+    }
+    &.selected {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.stp-content {
+  background: #e4e4e4;
+  -webkit-box-sizing: border-box;
+}
+
+.stp-content-panel {
+  background: #e4e4e4;
+}
+
+.stp-nav {
+  width: 272px;
+  border-right: 1px solid black;
+  background: #444;
 }
