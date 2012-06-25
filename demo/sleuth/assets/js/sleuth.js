@@ -26,15 +26,6 @@
         animation: 'infromleft'
       });
     });
-    $.getJSON('assets/json/images.json', function(images) {
-      show_thumbnails(st.stp_nav.find('a.selected').text(), images);
-      return st.stp_nav.find('nav a').click(function() {
-        $(this).addClass('selected').siblings().removeClass('selected');
-        st.toggle_nav();
-        show_thumbnails($(this).text(), images);
-        return false;
-      });
-    });
     show_thumbnails = function(section, images) {
       var i, img, loaded, thumbs, total, _i, _len, _ref, _results;
       thumbnails.empty().addClass('loading');
@@ -68,7 +59,7 @@
         return false;
       });
     };
-    return show_image = function(img) {
+    show_image = function(img) {
       st.show_section(detail, {
         animation: 'infromright'
       });
@@ -81,6 +72,13 @@
       photo.find('cite').html(img.title);
       return photo.find('[rel="author"]').prop('href', "http://flickr.com/photos/" + img.owner + "/" + img.id).html(img.ownername);
     };
+    show_thumbnails(st.stp_nav.find('a.selected').text(), images);
+    return st.stp_nav.find('nav a').click(function() {
+      $(this).addClass('selected').siblings().removeClass('selected');
+      st.toggle_nav();
+      show_thumbnails($(this).text(), images);
+      return false;
+    });
   });
 
 }).call(this);
