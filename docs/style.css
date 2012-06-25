@@ -1,5 +1,9 @@
 * { box-sizing: border-box; }
 
+body {
+  font-size: 1em;
+}
+
 #container {
   margin: 0 auto;
   padding-right: 450px;
@@ -11,6 +15,7 @@
   background: url(iphone.png);
   width: 410px;
   height: 782px;
+  margin-left: -30px;
   padding: 149px 0 0 45px;
   position: absolute;
   top: 0;
@@ -21,7 +26,15 @@ h1 {
   overflow: hidden;
   height: 292px;
   width: 414px;
-  margin: 0 auto;
+  margin: 0px;
   text-indent: 100%;
   line-height: 414px;
+}
+
+h2 {
+  border-top: 5px solid #eee;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  margin: 20px 0;
+  padding-top: 20px;
 }

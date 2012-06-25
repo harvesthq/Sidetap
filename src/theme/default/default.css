@@ -1,6 +1,4 @@
-/*
-  Reset Stuff
-*/
+/* Reset */
 html,
 body,
 div,
@@ -123,288 +121,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-header {
-  background: #f05800;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fb8020), color-stop(100%, #f05800));
-  background: -webkit-linear-gradient(top, #fb8020, #f05800);
-  background: -moz-linear-gradient(top, #fb8020, #f05800);
-  background: -o-linear-gradient(top, #fb8020, #f05800);
-  background: -ms-linear-gradient(top, #fb8020, #f05800);
-  background: linear-gradient(top, #fb8020, #f05800);
-  border-bottom: 1px solid #823010;
-  position: absolute;
-  color: white;
-  display: block;
-  height: 43px;
-  -webkit-transform: translatez(0);
-  text-align: center;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-  width: 100%;
-  z-index: 1;
-  -webkit-transform: translatez(0);
-  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
-}
-header > .header-button {
-  background: #e24000;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f36501), color-stop(100%, #e24000));
-  background: -webkit-linear-gradient(top, #f36501, #e24000);
-  background: -moz-linear-gradient(top, #f36501, #e24000);
-  background: -o-linear-gradient(top, #f36501, #e24000);
-  background: -ms-linear-gradient(top, #f36501, #e24000);
-  background: linear-gradient(top, #f36501, #e24000);
-  border: 1px solid #bc3a00;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  height: 28px;
-  left: 5px;
-  line-height: 26px;
-  padding: 0 8px;
-  position: absolute;
-  -webkit-transform: translatez(0);
-  top: 7px;
-  text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
-  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
-}
-header > .header-button > .add {
-  font-size: 28px;
-  line-height: 20px;
-}
-header > .header-button > .menu {
-  background: transparent url('img/menu.png') no-repeat;
-  -moz-background-size: 17px 15px;
-  -webkit-background-size: 17px 15px;
-  -o-background-size: 17px 15px;
-  background-size: 17px 15px;
-  display: inline-block;
-  height: 15px;
-  margin: 6px 2px 0;
-  text-indent: -9999px;
-  width: 17px;
-}
-header > .header-button.right {
-  left: auto;
-  right: 5px;
-}
-header > .header-button.special {
-  background: #d4d4d4;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f4f4f4), color-stop(100%, #d4d4d4)) !important;
-  background: -webkit-linear-gradient(top, #f4f4f4, #d4d4d4) !important;
-  background: -moz-linear-gradient(top, #f4f4f4, #d4d4d4) !important;
-  background: -o-linear-gradient(top, #f4f4f4, #d4d4d4) !important;
-  background: -ms-linear-gradient(top, #f4f4f4, #d4d4d4) !important;
-  background: linear-gradient(top, #f4f4f4, #d4d4d4) !important;
-  border: 1px solid #555555 !important;
-  color: #444444 !important;
-  text-shadow: 0 1px 0 white !important;
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important;
-  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) !important;
-}
-/* line 203, sass/mobile.sass */
-header.header-navigation {
-  background: #222222;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3c3c3c), color-stop(100%, #222222));
-  background: -webkit-linear-gradient(top, #3c3c3c, #222222);
-  background: -moz-linear-gradient(top, #3c3c3c, #222222);
-  background: -o-linear-gradient(top, #3c3c3c, #222222);
-  background: -ms-linear-gradient(top, #3c3c3c, #222222);
-  background: linear-gradient(top, #3c3c3c, #222222);
-  border-color: black;
-  color: #999999;
-  font-size: 11px;
-  text-align: left;
-  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.14);
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.14);
-  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.14);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.14);
-}
-.header-navigation h4 {
-  margin: 13px 10px;
-}
-/* line 233, sass/mobile.sass */
-.button-gray {
-  border: 1px solid #aaaaaa;
-  display: block;
-  font-size: 17px;
-  font-weight: bold;
-  height: 39px;
-  line-height: 38px;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  background: #d4d4d4;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f4f4f4), color-stop(100%, #d4d4d4));
-  background: -webkit-linear-gradient(top, #f4f4f4, #d4d4d4);
-  background: -moz-linear-gradient(top, #f4f4f4, #d4d4d4);
-  background: -o-linear-gradient(top, #f4f4f4, #d4d4d4);
-  background: -ms-linear-gradient(top, #f4f4f4, #d4d4d4);
-  background: linear-gradient(top, #f4f4f4, #d4d4d4);
-  color: #444444;
-  -moz-box-shadow: inset 0 1px 0 white;
-  -webkit-box-shadow: inset 0 1px 0 white;
-  -o-box-shadow: inset 0 1px 0 white;
-  box-shadow: inset 0 1px 0 white;
-}
-/* line 240, sass/mobile.sass */
-.button-green {
-  border: 1px solid #aaaaaa;
-  display: block;
-  font-size: 17px;
-  font-weight: bold;
-  height: 39px;
-  line-height: 38px;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  background: #2e8d11;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72c152), color-stop(100%, #2e8d11));
-  background: -webkit-linear-gradient(top, #72c152, #2e8d11);
-  background: -moz-linear-gradient(top, #72c152, #2e8d11);
-  background: -o-linear-gradient(top, #72c152, #2e8d11);
-  background: -ms-linear-gradient(top, #72c152, #2e8d11);
-  background: linear-gradient(top, #72c152, #2e8d11);
-  border-color: #2e8d11;
-  color: white;
-  text-shadow: 0 -1px 0 #2e8d11;
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
-}
-/* line 249, sass/mobile.sass */
-.button-blue {
-  border: 1px solid #aaaaaa;
-  display: block;
-  font-size: 17px;
-  font-weight: bold;
-  height: 39px;
-  line-height: 38px;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  background: #1385e5;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #53b2fc), color-stop(100%, #1385e5));
-  background: -webkit-linear-gradient(top, #53b2fc, #1385e5);
-  background: -moz-linear-gradient(top, #53b2fc, #1385e5);
-  background: -o-linear-gradient(top, #53b2fc, #1385e5);
-  background: -ms-linear-gradient(top, #53b2fc, #1385e5);
-  background: linear-gradient(top, #53b2fc, #1385e5);
-  border-color: #0f6bb9;
-  color: white;
-  text-shadow: 0 -1px 0 #0059a4;
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-}
-/* line 258, sass/mobile.sass */
-.button-deemphasize {
-  border: 1px solid #aaaaaa;
-  display: block;
-  font-size: 17px;
-  font-weight: bold;
-  height: 39px;
-  line-height: 38px;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  color: #888888;
-  font-size: 15px;
-  height: 32px;
-  line-height: 32px;
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0);
-  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0);
-}
-/* line 266, sass/mobile.sass */
-.button-loading {
-  border: 1px solid #aaaaaa;
-  display: block;
-  font-size: 17px;
-  font-weight: bold;
-  height: 39px;
-  line-height: 38px;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  background: #eeeeee;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #eeeeee));
-  background: -webkit-linear-gradient(top, #dddddd, #eeeeee);
-  background: -moz-linear-gradient(top, #dddddd, #eeeeee);
-  background: -o-linear-gradient(top, #dddddd, #eeeeee);
-  background: -ms-linear-gradient(top, #dddddd, #eeeeee);
-  background: linear-gradient(top, #dddddd, #eeeeee);
-  color: #999999;
-  text-shadow: 0 1px 0 white;
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-}
-/* line 385, sass/mobile.sass */
-.container {
-  font-size: 13px;
-}
-/* line 389, sass/mobile.sass */
-.container.edit-entry {
-  padding-top: 24px;
-}
-/* line 391, sass/mobile.sass */
-.container.team-status {
-  padding-top: 0px;
-}
-/* line 394, sass/mobile.sass */
-section {
-  margin: 10px 0px;
-  position: relative;
-  -webkit-transform: translatez(0);
-}
 /*
   Sidetap Default Theme
   Demo app: Sleuth
@@ -425,92 +141,22 @@ h1 {
   font-weight: bold;
   line-height: 42px;
 }
-h2 {
-  color: #444;
-  font-size: 17px;
-  font-weight: normal;
-  line-height: 43px;
-}
-h2 strong {
-  color: #222;
-}
-h3 {
-  color: #666;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 18px;
-  padding: 10px;
-}
-h4 {
-  color: white;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 18px;
-  vertical-align: middle;
-}
 a {
-  color: #444;
+  color: #004213;
 }
 img {
   max-width: 100%;
 }
-header {
-  background: #222;
-  border-bottom: 1px solid #823010;
-  color: white;
-  display: block;
-  height: 43px;
-  position: absolute;
-  -webkit-transform: translatez(0);
-  text-align: center;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-  width: 100%;
-  z-index: 1;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
-}
-header .header-button {
-  background: #666;
-  border: 1px solid #bc3a00;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  height: 28px;
-  left: 5px;
-  line-height: 26px;
-  padding: 0 8px;
-  position: absolute;
-  -webkit-transform: translatez(0);
-  text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-  top: 7px;
-  -webkit-border-radius: 5px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.25);
-}
-header .header-button.right {
-  left: auto;
-  right: 5px;
-}
-header .header-button.icon span {
-  display: inline-block;
-  height: 15px;
-  margin: 6px 2px 0;
-  text-indent: -9999px;
-  width: 17px;
-  -webkit-background-size: 17px 15px;
-}
-header .header-button.menu span {
-  background: transparent url('../../../../src/img/menu.png') no-repeat;
-}
-header .header-button.info span {
-  background: transparent url('../../../../src/img/info.png') no-repeat;
+.stp-nav {
+  background: #2c2e2b;
+  border-right: 1px solid black;
+  width: 272px;
 }
 nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   display: block;
-  -webkit-transform: translatez(0);
 }
-nav  > a {
+nav > a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   color: #cccccc;
@@ -525,36 +171,123 @@ nav  > a {
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 }
-nav  > a:after {
-  background: transparent url('../../../../src/img/arrow-right-white.png') no-repeat left center;
+nav > a:after {
+  background: transparent url('img/arrow-right-white.png') no-repeat left center;
   content: ' ';
   display: block;
   height: 41px;
   opacity: 0.3;
   position: absolute;
   -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
   right: 0;
   top: 0;
   width: 19px;
   -webkit-background-size: 19px 14px;
+  -moz-background-size: 19px 14px;
+  -o-background-size: 19px 14px;
+  background-size: 19px 14px;
 }
-nav  > a.selected {
+nav > a.selected {
+  background: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
 }
-nav  > a.selected:after {
+nav > a.selected:after {
   opacity: 1;
+}
+header {
+  background: #00601b;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #198f3a), color-stop(100%, #00601b));
+  background: -webkit-linear-gradient(top, #198f3a, #00601b);
+  background: -moz-linear-gradient(top, #198f3a, #00601b);
+  background: -o-linear-gradient(top, #198f3a, #00601b);
+  background: linear-gradient(top, #198f3a, #00601b);
+  border-bottom: 1px solid #00280b;
+  color: white;
+  display: block;
+  height: 43px;
+  position: absolute;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  width: 100%;
+  z-index: 1;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+header .header-button {
+  background: #004914;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0c772a), color-stop(100%, #004914));
+  background: -webkit-linear-gradient(top, #0c772a, #004914);
+  background: -moz-linear-gradient(top, #0c772a, #004914);
+  background: -o-linear-gradient(top, #0c772a, #004914);
+  background: linear-gradient(top, #0c772a, #004914);
+  border: 1px solid #004213;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  height: 28px;
+  left: 5px;
+  line-height: 26px;
+  padding: 0 8px;
+  position: absolute;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  top: 7px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.25);
+  -o-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+header .header-button.right {
+  left: auto;
+  right: 5px;
+}
+header .header-button.icon span {
+  display: inline-block;
+  height: 15px;
+  margin: 6px 2px 0;
+  text-indent: -9999px;
+  width: 17px;
+  -webkit-background-size: 17px 15px;
+  -moz-background-size: 17px 15px;
+  -o-background-size: 17px 15px;
+  background-size: 17px 15px;
+}
+header .header-button.menu span {
+  background: transparent url('img/menu.png') no-repeat;
+}
+header .header-button.info span {
+  background: transparent url('img/info.png') no-repeat;
 }
 .stp-content {
   background: #eeeee3;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .stp-content-panel {
   background: #eeeee3;
 }
-.stp-nav {
-  width: 272px;
-  border-right: 1px solid black;
-  background: #444;
+.container {
+  margin-top: 44px;
+  padding: 10px;
 }

@@ -1,44 +1,53 @@
-/* Content */
+/* Sleuth Content */
 
 .loading {
   height: 3em;
   background: url('../img/ajax-loader.gif') no-repeat center center;
 }
-
-.sleuth-gallery {
-
+#detail figure.loading img, #detail figure.loading figcaption {
+  display: none;
 }
+
+.container {
+  padding: 0px;
+}
+#about .container {
+  padding: 10px;
+}
+
 .thumbnails {
   overflow: auto;
+  padding-top: 1.5%;
 }
 .thumbnails li {
   float: left;
-  width: 22.75%;
-  margin: 0 3% 3% 0;
+  width: 23.5%;
+  margin: 0 0 1.5% 1.5%;
   line-height: 0;
 }
 .thumbnails li img {
+  display: block;
   width: 100%;
-}
-.thumbnails li.right {
-  margin-right: 0;
 }
 .thumbnails.loading li {
   display: none
 }
 
-#detail {
-
-}
-#detail .sleuth-detail {
-
-}
-#detail figure img {
+#detail img {
+  border-bottom: 1px solid #fff;
   width: 100%;
 }
-#detail figure.loading img, #detail figure.loading figcaption {
-  display: none;
+#detail figcaption {
+  font-style: normal;
+  padding: 10px;
+  text-align: center;
 }
-
-
-
+#detail cite {
+  font-style: normal;
+  font-weight: bold;
+}
+#detail address {
+  font-size: 12px;
+  font-style: normal;
+  line-height: 20px;
+}
