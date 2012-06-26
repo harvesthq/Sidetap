@@ -215,7 +215,7 @@ header {
   background: -moz-linear-gradient(top, #743f8d, #532667);
   background: -o-linear-gradient(top, #743f8d, #532667);
   background: linear-gradient(top, #743f8d, #532667);
-  border-bottom: 1px solid #32203b;
+  border-bottom: 1px solid #281730;
   color: white;
   display: block;
   height: 43px;
@@ -240,7 +240,7 @@ header .header-button {
   background: -moz-linear-gradient(top, #66337c, #472457);
   background: -o-linear-gradient(top, #66337c, #472457);
   background: linear-gradient(top, #66337c, #472457);
-  border: 1px solid #41224e;
+  border: 1px solid #32163d;
   color: white;
   font-size: 13px;
   font-weight: bold;
