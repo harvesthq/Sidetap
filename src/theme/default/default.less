@@ -40,7 +40,7 @@ table {
 
 
 
-
+@bg-color: #171a21;
 
 
 /*
@@ -48,7 +48,7 @@ table {
   Demo app: Sleuth
 */
 body {
-  background: #171a21;
+  background: @bg-color;
   color: #fff;
   font-family: 'Helvetica Neue', 'Helvetica-Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -66,7 +66,20 @@ h1 {
 }
 
 a {
-  color: #7f5ba7;
+  color: #9e6ab7;
+}
+.button {
+  background: #743f8d;
+  color: #fff;
+  display: block;
+  margin: 0 10px;
+  padding: 15px;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius:    5px;
+  -o-border-radius:      5px;
+  border-radius:         5px;
 }
 
 img {
@@ -127,13 +140,13 @@ nav {
 
 
 header {
-  background: #2f154b;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5b3a80), color-stop(100%, #2f154b));
-  background: -webkit-linear-gradient(top, #5b3a80, #2f154b);
-  background:    -moz-linear-gradient(top, #5b3a80, #2f154b);
-  background:      -o-linear-gradient(top, #5b3a80, #2f154b);
-  background:         linear-gradient(top, #5b3a80, #2f154b);
-  border-bottom: 1px solid #13091f;
+  background: #532667;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #743f8d), color-stop(100%, #532667));
+  background: -webkit-linear-gradient(top, #743f8d, #532667);
+  background:    -moz-linear-gradient(top, #743f8d, #532667);
+  background:      -o-linear-gradient(top, #743f8d, #532667);
+  background:         linear-gradient(top, #743f8d, #532667);
+  border-bottom: 1px solid #281730;
   color: white;
   display: block;
   height: 43px;
@@ -146,18 +159,18 @@ header {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
   width: 100%;
   z-index: 1;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow:    inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow:      inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow:         inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow:    inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 5px rgba(0, 0, 0, 0.75);
+  -o-box-shadow:      inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 5px rgba(0, 0, 0, 0.75);
+  box-shadow:         inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 5px rgba(0, 0, 0, 0.75);
   .header-button {
-    background: #200e33;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #482a68), color-stop(100%, #200e33));
-    background: -webkit-linear-gradient(top, #482a68, #200e33);
-    background:    -moz-linear-gradient(top, #482a68, #200e33);
-    background:      -o-linear-gradient(top, #482a68, #200e33);
-    background:         linear-gradient(top, #482a68, #200e33);
-    border: 1px solid #200e33;
+    background: #472457;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #66337c), color-stop(100%, #472457));
+    background: -webkit-linear-gradient(top, #66337c, #472457);
+    background:    -moz-linear-gradient(top, #66337c, #472457);
+    background:      -o-linear-gradient(top, #66337c, #472457);
+    background:         linear-gradient(top, #66337c, #472457);
+    border: 1px solid #32163d;
     color: white;
     font-size: 13px;
     font-weight: bold;
@@ -215,14 +228,14 @@ header {
 
 
 .stp-content {
-  background: #171a21;
+  background: @bg-color;
   -webkit-box-sizing: border-box;
   -moz-box-sizing:    border-box;
   -o-box-sizing:      border-box;
   box-sizing:         border-box;
 }
 .stp-content-panel {
-  background: #171a21;
+  background: @bg-color;
 }
 .container {
   margin-top: 44px;
