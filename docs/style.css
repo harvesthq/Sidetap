@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 
 body {
-  background: url(black_bg.png) repeat;
+  background: black url(black_bg.png) repeat;
   color: #888;
   font-size: 0.95em;
   font-family: Helvetica, Arial, sans-serif;

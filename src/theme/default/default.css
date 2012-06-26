@@ -262,20 +262,27 @@ header .header-button.right {
 }
 header .header-button.icon span {
   display: inline-block;
+  text-indent: -9999px;
+}
+header .header-button.menu span {
+  background: transparent url('img/menu.png') no-repeat;
   height: 15px;
   margin: 6px 2px 0;
-  text-indent: -9999px;
   width: 17px;
   -webkit-background-size: 17px 15px;
   -moz-background-size: 17px 15px;
   -o-background-size: 17px 15px;
   background-size: 17px 15px;
 }
-header .header-button.menu span {
-  background: transparent url('img/menu.png') no-repeat;
-}
 header .header-button.info span {
   background: transparent url('img/info.png') no-repeat;
+  height: 17px;
+  margin: 5px 5px 0;
+  width: 8px;
+  -webkit-background-size: 8px 17px;
+  -moz-background-size: 8px 17px;
+  -o-background-size: 8px 17px;
+  background-size: 8px 17px;
 }
 .stp-content {
   background: #eeeee3;
