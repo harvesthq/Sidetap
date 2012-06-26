@@ -1,7 +1,5 @@
 #Sidetap
 
-Sidetap is a simple framework that allows you to quickly build platform-independant mobile web interfaces.
-
 We built Sidetap to be an easy-to-use implementation of the side navigation pattern popularized by apps like Sparrow and Facebook. It solves many common mobile development problems right out of the box. Here are some of the specific things we like about it:
 
 - **Lightweight**: Sidetap only weighs 2k when minifyied and gzipped!
