@@ -34,6 +34,7 @@
 }
 
 #detail img {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   width: 100%;
 }
 #detail figcaption {
