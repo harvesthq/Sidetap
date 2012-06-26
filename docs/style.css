@@ -182,7 +182,7 @@ ul {
   ul li {
     margin-bottom: 1em;
   }
-
+b { font-weight: bold; }
 
 #sidetap-support-warning {
   border-top: 1px solid #333;
@@ -190,6 +190,7 @@ ul {
   padding-top: 30px;
   color: #FF0;
 }
+#sidetap-support-warning b { display: block; }
   .hidden {
     display: none;
   }
