@@ -64,7 +64,7 @@
         animation: 'infromright'
       });
       photo.addClass('loading');
-      $("<img src='" + img.url_m + "' />").load(function() {
+      $("<img src='" + img.url_z + "' />").load(function() {
         photo.removeClass('loading').hide();
         photo.find('img').replaceWith(this);
         return photo.fadeIn('fast');

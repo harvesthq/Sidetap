@@ -57,7 +57,7 @@ $(document).ready () ->
 
     photo.addClass('loading')
 
-    $("<img src='#{img.url_m}' />").load(() ->
+    $("<img src='#{img.url_z}' />").load(() ->
       photo.removeClass('loading').hide()
 
       photo.find('img').replaceWith(this)
