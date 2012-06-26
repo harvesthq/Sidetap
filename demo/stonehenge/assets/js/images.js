@@ -33,7 +33,7 @@ images = {
       { "id": "3933217709", "owner": "68629006@N00", "title": "", "ownername": "beesquare", "url_s": "http:\/\/farm3.staticflickr.com\/2577\/3933217709_882e5382a4_s.jpg", "url_m": "http:\/\/farm3.staticflickr.com\/2577\/3933217709_882e5382a4_m.jpg" },
       { "id": "6419173839", "owner": "48311841@N08", "title": "The stage, Deep Purple", "ownername": "stumbler71", "url_s": "http:\/\/farm8.staticflickr.com\/7142\/6419173839_e63db2f8ff_s.jpg", "url_m": "http:\/\/farm8.staticflickr.com\/7142\/6419173839_e63db2f8ff_m.jpg" }
     ],
-    "Up to 11": [
+    "Goes to 11": [
       { "id": "453669135", "owner": "7716944@N02", "title": "my fender guitar amp", "ownername": "tigrshark105", "url_m": "http:\/\/farm1.staticflickr.com\/230\/453669135_f46afe7db9.jpg", "url_s": "http:\/\/farm1.staticflickr.com\/230\/453669135_f46afe7db9_s.jpg" },
       { "id": "3554002238", "owner": "49766127@N00", "title": "guitar & amp pr0n", "ownername": "Marco Raaphorst", "url_m": "http:\/\/farm4.staticflickr.com\/3335\/3554002238_2d26bf4ee8.jpg", "url_s": "http:\/\/farm4.staticflickr.com\/3335\/3554002238_2d26bf4ee8_s.jpg" },
       { "id": "2066521416", "owner": "87169328@N00", "title": "Guitar Amp", "ownername": "Akira Ohgaki", "url_m": "http:\/\/farm3.staticflickr.com\/2204\/2066521416_7df2f6cc7c.jpg", "url_s": "http:\/\/farm3.staticflickr.com\/2204\/2066521416_7df2f6cc7c_s.jpg" },
