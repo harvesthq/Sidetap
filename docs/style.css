@@ -49,12 +49,14 @@ table {
 body {
   position: relative;
   width: 980px;
+  padding-bottom: 100px;
   margin: 0 auto;
 
-  color: #888;
+  color: #bbb;
+
   font-size: 0.95em;
   font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.6em;
+  line-height: 1.5em;
   text-shadow: 0 -2px 1px black;
   background: black url(black_bg.png) repeat;
 }
@@ -90,6 +92,17 @@ code {
   background: rgba(0,0,0,0.25);
 }
 
+#demo {
+  background: url(iphone.png) no-repeat;
+  width: 410px;
+  height: 782px;
+  margin-left: -30px;
+  padding: 149px 0 0 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 header {
   width: 520px;
 }
@@ -102,11 +115,13 @@ header {
 
     background: url(sidetap-logo.png) 85px 20px no-repeat;
   }
+
   .intro {
     font-size: 1.25em;
     line-height: 1.5em;
     color: #faefff;
   }
+
 
 
 h2 {
@@ -178,3 +193,36 @@ ul {
   list-style-type: none;
 }
 
+.built-by-harvest {
+  margin: 135px 0 0 110px;
+  font-size: .85em;
+}
+
+.button {
+  background: #743f8d;
+  color: #fff;
+  display: block;
+  margin: 35px 10px 0;
+  padding: 15px;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 0;
+  font-size: 1.1em;
+}
+
+
+@media screen and (min-width: 700px) {
+  .sidetap-mobile-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #demo { display: none; }
+  #opening { width: 100%; }
+  body { width: 100%; padding: 0 25px 25px; }
+  h2 { line-height: 1.25em; margin: 30px 0 10px;}
+}

@@ -34,7 +34,7 @@
 }
 
 #detail img {
-  border-bottom: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
 }
 #detail figcaption {
@@ -50,4 +50,20 @@
   font-size: 12px;
   font-style: normal;
   line-height: 20px;
+}
+
+#about .container {
+  padding-top: 20px;
+  text-align: center;
+}
+.sidetap-logo {
+  display: block;
+  margin: 0px auto;
+  padding: 20px 0;
+  width: 80%;
+}
+small {
+  display: block;
+  font-size: 12px;
+  padding: 30px 0;
 }
