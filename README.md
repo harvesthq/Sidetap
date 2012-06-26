@@ -1,14 +1,13 @@
 #Sidetap
 
-Sidetap is a simple mobile framework that uses a hidden side navigation. It was inspired by Sparrow, Facebook and a number of apps that use the same navigation style.
+Sidetap is a simple framework that allows you to quickly build platform-independant mobile web interfaces.
 
-##Features
+We built Sidetap to be an easy-to-use implementation of the side navigation pattern popularized by apps like Sparrow and Facebook. It solves many common mobile development problems right out of the box. Here are some of the specific things we like about it:
 
-- **Side-navigation:** It's the whole reason we built Sidetap.
-- **Lightweight:** Sidetap's JS weighs in at about 10k... uncompressed and unminified. With minification and gzip, you're looking at a 2k asset. Not bad.
-- **Device Support:** Sidetap starts by delivering a solid baseline experience and only adds the bells and whistles for iOS 5+. This allows us to support tons of devices without maxing out file size.
-- **Makes Choices For You:** Sidetap demands a very specific html structure. This lets you focus on content instead of worrying about containers.
-- **Simple:** Sidetap doesn't try and do too much. Its game is animating between content panels and it tries not to do too much else.
+- **Lightweight**: Sidetap only weighs 2k when minifyied and gzipped!
+- **Device Support**: Sidetap aims to always deliver the best possible experience for all devices by starting with a basic experience and progressively enhancing it for more capable devices.
+- **Less Decisions to Make**: By embracing convention over configuration, Sidetap let’s you start building your mobile interfaces right away.
+- **Simple**: Sidetap provides a flexible foundation for navigating between content panels on mobile devices using an easy-to-use syntax.
   
 ##How to Use Sidetap
 
@@ -20,19 +19,23 @@ Sidetap is a simple mobile framework that uses a hidden side navigation. It was 
     
     Create a reference to Sidetap from within your app.
     
-    ``myapp.sidetap = new sidetap()``
+    ``var my_sidetap = new sidetap();``
 
 3. **Call Animations**
 
     Any time you want to show a new section, you just tell Sidetap which content element to animate. Sidetap will take care of clearing the stage using whatever animation is appropriate for the situation.
     
     ```javascript
-    myapp.sidetap.show_section(element, options)
+    my_sidetap.show_section(element, options);
     ```
     
-    **Show_section options object:**  
+    **show_section options:**  
     ``callback``: a function to fire when the switch is complete  
     ``animation``: an animation style to use (ios 5+ only). Current animations are upfrombottom, downfromtop, infromright, infromleft
+
+##Dependency
+
+Requires jQuery (only tested with 1.7.2) or Zepto.js.
 
 ##Building Files Using Grunt
 
