@@ -44,7 +44,12 @@ table {
 }
 
 
-* { box-sizing: border-box; }
+* {
+  -moz-box-sizing:    border-box;
+ -webkit-box-sizing: border-box;
+ -ms-box-sizing:     border-box;
+  box-sizing:        border-box;
+}
 
 body {
   position: relative;
@@ -102,17 +107,19 @@ code {
   right: 0;
 }
 
-header {
-  width: 520px;
-}
   h1 {
     overflow: hidden;
-    height: 260px;
-    margin: 10px 0 20px;
-
+    height: 240px;
+    margin: 10px auto 20px;
+    width: 100%;
+    max-width: 340px;
     text-indent: -999em;
-
-    background: url(sidetap-logo.png) 85px 20px no-repeat;
+    background: url(sidetap-logo.png) no-repeat;
+    background-size: 100% auto;
+       -moz-background-size: 100% auto;
+         -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+            background-size: 100% auto;
   }
 
   .intro {
@@ -216,4 +223,7 @@ ul {
   #opening { width: 100%; }
   body { width: 100%; padding: 0 25px 25px; }
   h2 { line-height: 1.25em; margin: 30px 0 10px;}
+}
+@media screen and (max-width: 340px) {
+  h1 { height: 190px; }
 }
