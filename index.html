@@ -18,21 +18,25 @@
     <h1>This is Sidetap</h1>
   </header>
   <div role="main" id="main">
+    <div id="demo">
+      <iframe src="demo/sleuth/index.html" width="320" height="482" frameborder="0"></iframe>
+    </div>
     <div id="content">
-      <p style="font-size: 1.5em;">Sidetap is a simple mobile framework that uses a hidden side navigation. It was inspired by Sparrow, Facebook and a number of apps that use the same navigation style.</p>
+      <div id="opening">
+        <p class="intro">Sidetap is a simple mobile framework that uses a hidden side navigation. It was inspired by Sparrow, Facebook and a number of apps that use the same navigation style.</p>
 
-      <h2 id="ughanothermobileframework">Ugh, another mobile framework?</h2>
+        <h2 id="ughanothermobileframework">Ugh, another mobile framework?</h2>
 
-      <p>We feel like Sidetap fills a need that&#8217;s not represented in the mobile space presently. Here are some of the specific things we like about it:</p>
+        <p>We feel like Sidetap fills a need that&#8217;s not represented in the mobile space presently. Here are some of the specific things we like about it:</p>
 
-      <ul>
-      <li><strong>Side-navigation:</strong> It&#8217;s the whole reason we built Sidetap.</li>
-      <li><strong>Lightweight:</strong> Sidetap&#8217;s JS weighs in at about 10k&#8230; uncompressed and unminified. With minification and gzip, you&#8217;re looking at a 2k asset. Not bad.</li>
-      <li><strong>Device Support:</strong> Sidetap starts by delivering a solid baseline experience and only adds the bells and whistles for iOS 5+. This allows us to support tons of devices without maxing out file size.</li>
-      <li><strong>Makes Choices For You:</strong> Sidetap demands a very specific html structure. This lets you focus on content instead of worrying about containers.</li>
-      <li><strong>Simple:</strong> Sidetap doesn&#8217;t try to do too much. Its game is animating between content panels and it tries not to do too much else.</li>
-      </ul>
-
+        <ul id="sidetap_facts">
+          <li><strong>Side-navigation</strong> &#150; It&#8217;s the whole reason we built Sidetap.</li>
+          <li><strong>Lightweight</strong> &#150; Sidetap&#8217;s JS weighs in at about 10k&#8230; uncompressed and unminified. With minification and gzip, you&#8217;re looking at a 2k asset. Not bad.</li>
+          <li><strong>Device Support</strong> &#150; Sidetap starts by delivering a solid baseline experience and only adds the bells and whistles for iOS 5+. This allows us to support tons of devices without maxing out file size.</li>
+          <li><strong>Makes Choices For You</strong> &#150; Sidetap demands a very specific html structure. This lets you focus on content instead of worrying about containers.</li>
+          <li><strong>Simple</strong> &#150; Sidetap doesn&#8217;t try to do too much. Its game is animating between content panels and it tries not to do too much else.</li>
+        </ul>
+      </div>
       <h2 id="howtousesidetap">How to Use Sidetap</h2>
 
       <ol>
@@ -92,12 +96,14 @@
     </div>
   </div>
   <footer>
-
+    FOOOTTTERRRRR
   </footer>
 </div>
+<!--
 <div id="demo">
-  <iframe src="demo/sleuth/index.html" width="320" height="482" frameborder="0"></iframe>
+  <iframe src="demo/sleuth/index.html" width="320" height="480" frameborder="0"></iframe>
 </div>
+-->
 <script type="text/javascript" src="lib/jquery.1.7.2.js"></script>
 <script type="text/javascript" src="docs/sidedocs.js"></script>
 </body>
