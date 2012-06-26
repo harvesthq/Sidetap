@@ -1,23 +1,24 @@
 * { box-sizing: border-box; }
 
 body {
-  font-size: 1em;
+  background: url(black_bg.png) repeat;
+  color: #888;
+  font-size: 0.95em;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.6em;
-  background: url(black_bg.png) repeat;
-  color: #eee;
+  text-shadow: 0 -2px 1px black;
 }
 
 a {
   color: #fff;
-  text-decoration: underline;
-  font-weight: bold;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
 }
 
 a:hover, a:active, a:visited {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  border-bottom: none;
 }
 
 p {
@@ -45,6 +46,27 @@ p {
   width: 520px;
 }
 
+#sidetap_facts {
+  list-style-type: none;
+}
+
+.intro {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: #faefff;
+}
+
+code {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, .25);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
+  moz-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+  display: block;
+  margin: 10px 0 20px;
+  padding: 10px;
+}
+
 h1 {
   background: url(sidetap-logo.png) 85px 20px no-repeat;
   overflow: hidden;
@@ -65,7 +87,7 @@ h2 {
 }
 
 strong {
-  color: #efd2fe;
+  color: #faefff;
   line-height: 1em;
 }
 
@@ -74,19 +96,9 @@ ul, ol {
 }
 
 ul li {
+  margin-bottom: 15px;
+}
+
+ol li {
   margin-bottom: 10px;
-}
-
- ol li {
-  margin-bottom: 20px;
- }
-
-#sidetap_facts {
-  list-style-type: none;
-}
-
-.intro {
-  font-size: 1.4em;
-  line-height: 1.4em;
-  color: #fff;
 }
