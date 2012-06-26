@@ -1,12 +1,62 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
 * { box-sizing: border-box; }
 
 body {
-  background: black url(black_bg.png) repeat;
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+
   color: #888;
   font-size: 0.95em;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.6em;
   text-shadow: 0 -2px 1px black;
+  background: black url(black_bg.png) repeat;
 }
 
 a {
@@ -25,21 +75,99 @@ p {
   margin: 5px 0;
 }
 
-#container {
-  margin: 0 auto;
-  position: relative;
-  width: 980px;
+code {
+  display: block;
+  padding: 10px;
+  margin: 10px 0 20px;
+
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,0.3), inset 0 0 5px rgba(0,0,0,1.0);
+  -moz-box-shadow: 0 0 1px rgba(255,255,255,0.3), inset 0 0 5px rgba(0,0,0,1.0);
+  box-shadow: 0 0 1px rgba(255,255,255,0.3), inset 0 0 5px rgba(0,0,0,1.0);
+  font-family: monospace;
+
+  color: #faefff;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.25);
 }
 
+header {
+  width: 520px;
+}
+  h1 {
+    overflow: hidden;
+    height: 260px;
+    margin: 10px 0 20px;
+
+    text-indent: -999em;
+
+    background: url(sidetap-logo.png) 85px 20px no-repeat;
+  }
+  .intro {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color: #faefff;
+  }
+
+
+h2 {
+  border-top: 1px solid #333;
+  font-size: 1.75em;
+  margin: 30px 0 20px;
+  padding: 30px 0 0 0;
+  color: #cd7ef8;
+  font-weight: bold;
+}
+
+h3 {
+  color: #faefff;
+  font-weight: bold;
+}
+
+dl {
+  overflow: auto;
+  margin-top: 1.5em;
+}
+  dd {
+    margin-bottom: 15px;
+  }
+  dt {
+    clear: left;
+    float: left;
+    margin-right: 0.35em;
+    color: #faefff;
+    font-weight: bold;
+  }
+  dt::after {
+    margin-left: 0.35em;
+    content: '—';
+    color: #888;
+  }
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  margin-top: 1em;
+  list-style-type: circle;
+}
+  ul li {
+    margin-bottom: 1em;
+  }
+
+
+
 #demo {
-  background: url(iphone.png);
-  width: 410px;
-  height: 782px;
-  margin-left: -30px;
-  padding: 149px 0 0 45px;
   position: absolute;
   top: 0;
   right: 0;
+
+  width: 410px;
+  height: 782px;
+  padding: 149px 0 0 45px;
+  margin-left: -30px;
+
+  background: url(iphone.png);
 }
 
 #opening {
@@ -50,55 +178,3 @@ p {
   list-style-type: none;
 }
 
-.intro {
-  font-size: 1.25em;
-  line-height: 1.5em;
-  color: #faefff;
-}
-
-code {
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, .25);
-  box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .3), inset 0 0 5px rgba(0, 0, 0, 1.0);
-  moz-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
-  display: block;
-  margin: 10px 0 20px;
-  padding: 10px;
-}
-
-h1 {
-  background: url(sidetap-logo.png) 85px 20px no-repeat;
-  overflow: hidden;
-  height: 240px;
-  width: 520px;
-  margin: 30px 0 20px;
-  padding-top: 20px;
-  text-indent: 100%;
-  line-height: 414px;
-}
-
-h2 {
-  border-top: 1px solid #333;
-  font-size: 1.75em;
-  margin: 30px 0 20px;
-  padding: 30px 0 0 0;
-  color: #cd7ef8;
-}
-
-strong {
-  color: #faefff;
-  line-height: 1em;
-}
-
-ul, ol {
-  margin-left: -40px;
-}
-
-ul li {
-  margin-bottom: 15px;
-}
-
-ol li {
-  margin-bottom: 10px;
-}
