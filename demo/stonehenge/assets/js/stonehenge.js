@@ -4,6 +4,26 @@
   $(document).ready(function() {
     var about, detail, gallery, photo, render_thumbnails, show_image, show_thumbnails, st, thumbnails,
       _this = this;
+    Harvey.attach('only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)', {
+      setup: function() {
+        var category, i, image, list, _results;
+        _results = [];
+        for (category in images) {
+          list = images[category];
+          _results.push((function() {
+            var _i, _len, _results1;
+            _results1 = [];
+            for (i = _i = 0, _len = list.length; _i < _len; i = ++_i) {
+              image = list[i];
+              image.url_s = image.url_s.replace(/_s\.jpg$/, '_q.jpg');
+              _results1.push(images[category][i] = image);
+            }
+            return _results1;
+          })());
+        }
+        return _results;
+      }
+    });
     st = sidetap();
     gallery = $('#gallery');
     thumbnails = gallery.find('.thumbnails');
