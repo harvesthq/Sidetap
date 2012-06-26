@@ -107,6 +107,12 @@ ol li {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 700px) {
+  .sidetap-mobile-link {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 700px) {
   #demo { display: none; }
   #opening { width: 100%; }
