@@ -48,6 +48,10 @@ There are a few available commands.
 - ``grunt`` or ``grunt build``: build the css & js files
 - ``grunt watch``: build the css & js files whenever the less or coffee files change
 
+##Reporting Issues & Contributing
+
+We welcome your input, but strongly encourage you to read Nicolas Gallagher's excellent [issue guidelines](https://github.com/necolas/issue-guidelines/blob/master/README.md) before filing an issue or opening a pull request. While these are guidelines are his projects specifically, they would serve as an excellent guide for contributing to any open source project.
+
 ##Development Roadmap
 
 As with any software project, there's always room for improvement. These are some of the things we'd like to get added to Sidetap in the future.
