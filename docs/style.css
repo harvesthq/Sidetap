@@ -32,7 +32,7 @@ p {
 }
 
 #demo {
-  background: url(iphone.png);
+  background: url(iphone.png) no-repeat;
   width: 410px;
   height: 782px;
   margin-left: -30px;
