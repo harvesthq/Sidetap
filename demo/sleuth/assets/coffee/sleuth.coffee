@@ -22,7 +22,7 @@ $(document).ready () ->
 
   show_thumbnails = (section, images) ->
     thumbnails.empty().addClass('loading')
-    gallery.find('h1').text(section + ' Bears')
+    gallery.find('h1').text(section)
 
     thumbs = []
 
