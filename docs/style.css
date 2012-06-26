@@ -183,7 +183,7 @@ ul {
   background: url(iphone.png);
 }
 
-#opening {
+#opening, #opening + h2 {
   width: 520px;
 }
 
@@ -220,7 +220,7 @@ ul {
 
 @media screen and (max-width: 700px) {
   #demo { display: none; }
-  #opening { width: 100%; }
+  #opening, #opening + h2 { width: 100%; }
   body { width: 100%; padding: 0 25px 25px; }
   h2 { line-height: 1.25em; margin: 30px 0 10px;}
 }
