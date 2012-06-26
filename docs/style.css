@@ -18,6 +18,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -41,7 +42,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 
 
 * { box-sizing: border-box; }
@@ -88,8 +88,8 @@ code {
   font-family: monospace;
 
   color: #faefff;
-  background: rgb(0,0,0);
-  background: rgba(0,0,0,0.25);
+  background: rgb(41,44,64);
+  background: rgba(255,255,255,0.15);
 }
 
 #demo {
@@ -159,6 +159,14 @@ dl {
 ol {
   list-style-type: decimal;
 }
+
+  ol li {
+    margin-bottom: 1em;
+  }
+
+  ol li li{
+    margin-bottom: 0.25em;
+  }
 
 ul {
   margin-top: 1em;
