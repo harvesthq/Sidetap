@@ -103,17 +103,15 @@ code {
   right: 0;
 }
 
-header {
-  width: 520px;
-}
   h1 {
     overflow: hidden;
-    height: 260px;
-    margin: 10px 0 20px;
-
+    height: 240px;
+    margin: 10px auto 20px;
+    width: 100%;
+    max-width: 340px;
     text-indent: -999em;
-
-    background: url(sidetap-logo.png) 85px 20px no-repeat;
+    background: url(sidetap-logo.png) no-repeat;
+    background-size: 100% auto;
   }
 
   .intro {
@@ -185,7 +183,7 @@ ul {
   background: url(iphone.png);
 }
 
-#opening {
+#opening, #opening + h2 {
   width: 520px;
 }
 
@@ -222,7 +220,10 @@ ul {
 
 @media screen and (max-width: 700px) {
   #demo { display: none; }
-  #opening { width: 100%; }
+  #opening, #opening + h2 { width: 100%; }
   body { width: 100%; padding: 0 25px 25px; }
   h2 { line-height: 1.25em; margin: 30px 0 10px;}
+}
+@media screen and (max-width: 340px) {
+  h1 { height: 190px; }
 }
