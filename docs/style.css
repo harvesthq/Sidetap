@@ -84,7 +84,7 @@ h1 {
 }
 
 h2 {
-  border-top: 1px solid #555;
+  border-top: 1px solid #333;
   font-size: 1.75em;
   margin: 30px 0 20px;
   padding: 30px 0 0 0;
@@ -106,6 +106,11 @@ ul li, ol li {
 
 ol li li {
   margin-bottom: 5px;
+}
+
+.built-by-harvest {
+  margin: 135px 0 0 110px;
+  font-size: .85em;
 }
 
 @media screen and (max-width: 700px) {
