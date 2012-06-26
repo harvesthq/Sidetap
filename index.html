@@ -19,7 +19,6 @@
 
   <div role="main" id="main">
     <div id="demo">
-      <iframe src="demo/sleuth/index.html" width="320" height="482" frameborder="0"></iframe>
       <p class="built-by-harvest">
         Built by <a href="http://www.getharvest.com">Harvest</a>
       </p>
@@ -111,5 +110,14 @@
 
     </div>
   </div>
+  <script type="text/javascript" src="lib/harvey.js"></script>
+  <script type="text/javascript">
+    Harvey.attach('screen and (min-width:700px)', {
+      setup: function(){
+        var demo = document.getElementById('demo');
+        demo.innerHTML = '<iframe src="demo/sleuth/index.html" width="320" height="482" frameborder="0"></iframe>' + demo.innerHTML;
+      }
+    });
+  </script>
 </body>
 </html>
