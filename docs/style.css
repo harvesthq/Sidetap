@@ -113,6 +113,22 @@ ol li li {
   font-size: .85em;
 }
 
+.button {
+  background: #743f8d;
+  color: #fff;
+  display: block;
+  margin: 35px 10px 0;
+  padding: 15px;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 0;
+  font-size: 1.1em;
+}
+
+
 @media screen and (min-width: 700px) {
   .sidetap-mobile-link {
     display: none;
