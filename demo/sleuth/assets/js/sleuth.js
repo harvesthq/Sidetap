@@ -29,7 +29,7 @@
     show_thumbnails = function(section, images) {
       var i, img, loaded, thumbs, total, _i, _len, _ref, _results;
       thumbnails.empty().addClass('loading');
-      gallery.find('h1').text(section + ' Bears');
+      gallery.find('h1').text(section);
       thumbs = [];
       total = images[section].length;
       loaded = 0;
