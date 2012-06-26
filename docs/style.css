@@ -70,13 +70,16 @@ code {
 
 h1 {
   background: url(sidetap-logo.png) no-repeat;
+  background-size: 100% auto;
   overflow: hidden;
   height: 240px;
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   margin: 30px auto 20px;
   padding-top: 20px;
   text-indent: 100%;
   line-height: 414px;
+  white-space: nowrap;
 }
 
 h2 {
