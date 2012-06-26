@@ -29,8 +29,12 @@
         <header>
           <h1>This is Sidetap</h1>
           <p class="intro">Sidetap is a simple framework that allows you to quickly build platform-independant mobile web interfaces.</p>
+
+          <div id="sidetap-support-warning">
+            Notice: 
+          </div>
         </header>
-        
+
         <div class="sidetap-mobile-link">
           <a href="demo/sleuth/index.html" class="button">Check Out the Demo</a>
         </div>
@@ -82,9 +86,9 @@
           </ul>
         </li>
       </ol>
-      
+
       <h2>Dependency</h2>
-      
+
       <p>Requires jQuery (only tested with 1.7.2) or Zepto.js.</p>
 
       <h2>Development Roadmap</h2>
@@ -116,6 +120,14 @@
   </div>
   <script type="text/javascript" src="lib/harvey.js"></script>
   <script type="text/javascript">
+    // rendering engine compatibility check
+    if(window.SharedWorker && navigator.userAgent.match(/^((?!android).)*webkit.*$/i))
+    {
+      var warning = document.getElementById('sidetap-support-warning');
+      warning.className += ' hidden';
+    }
+
+    // load the demo only when there is enough space
     Harvey.attach('screen and (min-width:700px)', {
       setup: function(){
         var demo = document.getElementById('demo');

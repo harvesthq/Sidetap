@@ -183,6 +183,18 @@ ul {
     margin-bottom: 1em;
   }
 
+
+#sidetap-support-warning {
+  border-top: 1px solid #333;
+  margin: 30px 0 20px;
+  padding-top: 30px;
+  color: #FF0;
+}
+  .hidden {
+    display: none;
+  }
+
+
 #opening, #opening + h2 {
   width: 520px;
 }
@@ -206,7 +218,6 @@ ul {
   text-shadow: none;
   border-radius: 5px;
   text-align: center;
-  text-decoration: none;
   border-bottom: 0;
   font-size: 1.1em;
 }
