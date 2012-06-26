@@ -116,6 +116,10 @@ code {
     text-indent: -999em;
     background: url(sidetap-logo.png) no-repeat;
     background-size: 100% auto;
+       -moz-background-size: 100% auto;
+         -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+            background-size: 100% auto;
   }
 
   .intro {
