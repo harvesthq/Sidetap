@@ -126,12 +126,12 @@ table {
   Demo app: Sleuth
 */
 body {
-  background: #eeeee3;
-  color: #222;
+  background: #171a21;
+  color: #fff;
   font-family: 'Helvetica Neue', 'Helvetica-Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: normal;
-  text-shadow: 0 1px 0 white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   word-wrap: break-word;
   -webkit-text-size-adjust: none;
 }
@@ -142,24 +142,22 @@ h1 {
   line-height: 42px;
 }
 a {
-  color: #004213;
+  color: #7f5ba7;
 }
 img {
   max-width: 100%;
 }
 .stp-nav {
-  background: #2c2e2b;
+  background: #101318;
   border-right: 1px solid black;
   width: 272px;
 }
 nav {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   display: block;
 }
 nav > a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  color: #cccccc;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
   display: block;
   font-size: 17px;
   font-weight: bold;
@@ -169,7 +167,6 @@ nav > a {
   padding: 0 0 0 10px;
   position: relative;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 }
 nav > a:after {
   background: transparent url('img/arrow-right-white.png') no-repeat left center;
@@ -192,21 +189,20 @@ nav > a:after {
 }
 nav > a.selected {
   background: rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
   color: white;
 }
 nav > a.selected:after {
   opacity: 1;
 }
 header {
-  background: #00601b;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #198f3a), color-stop(100%, #00601b));
-  background: -webkit-linear-gradient(top, #198f3a, #00601b);
-  background: -moz-linear-gradient(top, #198f3a, #00601b);
-  background: -o-linear-gradient(top, #198f3a, #00601b);
-  background: linear-gradient(top, #198f3a, #00601b);
-  border-bottom: 1px solid #00280b;
+  background: #2f154b;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5b3a80), color-stop(100%, #2f154b));
+  background: -webkit-linear-gradient(top, #5b3a80, #2f154b);
+  background: -moz-linear-gradient(top, #5b3a80, #2f154b);
+  background: -o-linear-gradient(top, #5b3a80, #2f154b);
+  background: linear-gradient(top, #5b3a80, #2f154b);
+  border-bottom: 1px solid #13091f;
   color: white;
   display: block;
   height: 43px;
@@ -219,19 +215,19 @@ header {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
   width: 100%;
   z-index: 1;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 header .header-button {
-  background: #004914;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0c772a), color-stop(100%, #004914));
-  background: -webkit-linear-gradient(top, #0c772a, #004914);
-  background: -moz-linear-gradient(top, #0c772a, #004914);
-  background: -o-linear-gradient(top, #0c772a, #004914);
-  background: linear-gradient(top, #0c772a, #004914);
-  border: 1px solid #004213;
+  background: #200e33;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #482a68), color-stop(100%, #200e33));
+  background: -webkit-linear-gradient(top, #482a68, #200e33);
+  background: -moz-linear-gradient(top, #482a68, #200e33);
+  background: -o-linear-gradient(top, #482a68, #200e33);
+  background: linear-gradient(top, #482a68, #200e33);
+  border: 1px solid #200e33;
   color: white;
   font-size: 13px;
   font-weight: bold;
@@ -251,10 +247,10 @@ header .header-button {
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.25);
-  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.25);
-  -o-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.25);
-  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.15);
+  -o-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 header .header-button.right {
   left: auto;
@@ -285,14 +281,14 @@ header .header-button.info span {
   background-size: 8px 17px;
 }
 .stp-content {
-  background: #eeeee3;
+  background: #171a21;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
 .stp-content-panel {
-  background: #eeeee3;
+  background: #171a21;
 }
 .container {
   margin-top: 44px;
