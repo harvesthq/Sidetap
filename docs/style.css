@@ -190,7 +190,7 @@ ul {
   background: url(iphone.png);
 }
 
-#opening {
+#opening, #opening + h2 {
   width: 520px;
 }
 
