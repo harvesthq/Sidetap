@@ -2,11 +2,30 @@
 
 body {
   font-size: 1em;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+  background: url(black_bg.png) repeat;
+  color: #eee;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:hover, a:active, a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p {
+  margin: 5px 0;
 }
 
 #container {
   margin: 0 auto;
-  padding-right: 450px;
   position: relative;
   width: 980px;
 }
@@ -22,20 +41,52 @@ body {
   right: 0;
 }
 
+#opening {
+  width: 520px;
+}
+
 h1 {
-  background: url(sidetap-logo.png);
+  background: url(sidetap-logo.png) 85px 20px no-repeat;
   overflow: hidden;
-  height: 292px;
-  width: 414px;
-  margin: 0px;
+  height: 240px;
+  width: 520px;
+  margin: 30px 0 20px;
+  padding-top: 20px;
   text-indent: 100%;
   line-height: 414px;
 }
 
 h2 {
-  border-top: 5px solid #eee;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
-  margin: 20px 0;
-  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 1.75em;
+  margin: 30px 0 20px;
+  padding: 30px 0 0 0;
+  color: #cd7ef8;
+}
+
+strong {
+  color: #efd2fe;
+  line-height: 1em;
+}
+
+ul, ol {
+  margin-left: -40px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ ol li {
+  margin-bottom: 20px;
+ }
+
+#sidetap_facts {
+  list-style-type: none;
+}
+
+.intro {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  color: #fff;
 }
