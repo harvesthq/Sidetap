@@ -176,21 +176,6 @@ ul {
     margin-bottom: 1em;
   }
 
-
-
-#demo {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 410px;
-  height: 782px;
-  padding: 149px 0 0 45px;
-  margin-left: -30px;
-
-  background: url(iphone.png);
-}
-
 #opening, #opening + h2 {
   width: 520px;
 }

@@ -9,10 +9,11 @@
 }
 
 .container {
-  padding: 0px;
+  padding: 44px 0 0;
 }
 #about .container {
-  padding: 10px;
+  text-align: center;
+  padding: 54px 10px 10px;
 }
 
 .thumbnails {
@@ -52,10 +53,6 @@
   line-height: 20px;
 }
 
-#about .container {
-  padding-top: 20px;
-  text-align: center;
-}
 .sidetap-logo {
   display: block;
   margin: 0px auto;
