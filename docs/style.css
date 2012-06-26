@@ -69,11 +69,11 @@ code {
 }
 
 h1 {
-  background: url(sidetap-logo.png) 85px 20px no-repeat;
+  background: url(sidetap-logo.png) no-repeat;
   overflow: hidden;
-  height: 259px;
-  width: 520px;
-  margin: 30px 0 20px;
+  height: 240px;
+  width: 340px;
+  margin: 30px auto 20px;
   padding-top: 20px;
   text-indent: 100%;
   line-height: 414px;
@@ -102,4 +102,11 @@ ul li {
 
 ol li {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  #demo { display: none; }
+  #opening { width: 100%; }
+  #container { width: 100%; padding: 0 25px 25px; box-sizing: border-box; }
+  h2 { line-height: 1.25em; }
 }
