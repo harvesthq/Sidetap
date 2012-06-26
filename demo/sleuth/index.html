@@ -9,27 +9,22 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <link type="text/css" rel="stylesheet" media="screen" href="../../src/sidetap.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="../../src/theme/default/default.css" />
     <link type="text/css" rel="stylesheet" media="screen" href="assets/css/sleuth.css" />
   </head>
   <body>
     <div class="sidetap stp-full-height">
 
+      <!-- Navigation -->
       <div class="stp-nav stp-full-height">
-        <div>
-          <header class="header-navigation">
-            <img src="assets/img/profile-pic.png" height="32" width="32" />
-            <h4>Hello Brutus!</h4>
-          </header>
-
-          <nav>
-            <a href="#" class="selected">Black</a>
-            <a href="#">Grizzly</a>
-            <a href="#">Kodiak</a>
-            <a href="#">Panda</a>
-            <a href="#">Polar</a>
-            <a href="#">Sun</a>
-          </nav>
-        </div>
+        <nav>
+          <a href="#" class="selected">Black</a>
+          <a href="#">Grizzly</a>
+          <a href="#">Kodiak</a>
+          <a href="#">Panda</a>
+          <a href="#">Polar</a>
+          <a href="#">Sun</a>
+        </nav>
       </div>
 
       <div class="stp-content stp-full-height" id="content">
@@ -46,7 +41,7 @@
 
           <div class="stp-content-frame">
             <div class="stp-content-body">
-              <div>
+              <div class="container">
                 <ul class="thumbnails"></ul>
               </div>
             </div>
@@ -56,13 +51,12 @@
         <!-- Detail page -->
         <div class="stp-content-panel hidden" id="detail">
           <header>
-            <a href="javascript:void(0)" class="header-button back"><span>Back</span></a>
-            <h1></h1>
+            <a href="javascript:void(0)" class="header-button back">Back</a>
           </header>
 
           <div class="stp-content-frame">
             <div class="stp-content-body">
-              <div>
+              <div class="container">
                 <figure>
                   <img src="" alt="" />
                   <figcaption>
@@ -78,13 +72,12 @@
         <!-- About page -->
         <div class="stp-content-panel hidden" id="about">
           <header>
-            <a href="javascript:void(0)" class="header-button cancel"><span>Cancel</span></a>
-            <h1>SleuthApp</h1>
+            <a href="javascript:void(0)" class="header-button cancel right">Done</a>
           </header>
 
           <div class="stp-content-frame">
             <div class="stp-content-body">
-              <div>
+              <div class="container">
                 Good luck figuring stuff out!
               </div>
             </div>
