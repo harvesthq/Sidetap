@@ -6,7 +6,6 @@ class this.SidetapStandard
     @stp = @detect_primary_element("sidetap")
     @stp_nav = @detect_primary_element("stp-nav")
     @stp_content = @detect_primary_element("stp-content")
-    @stp_fake_header = @detect_primary_element("stp-fake-header")
     
     @set_up_observers()
   

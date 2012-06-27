@@ -15,7 +15,6 @@ this.SidetapStandard = (function() {
     this.stp = this.detect_primary_element("sidetap");
     this.stp_nav = this.detect_primary_element("stp-nav");
     this.stp_content = this.detect_primary_element("stp-content");
-    this.stp_fake_header = this.detect_primary_element("stp-fake-header");
     this.set_up_observers();
   }
 
