@@ -225,6 +225,26 @@ b { font-weight: bold; }
   font-size: 1.1em;
 }
 
+#ipad_demo {
+  background: url('ipad-demo-bg.png') no-repeat;
+  width:320px;
+  height: 482px;
+  position: relative;
+  padding-top: 180px;
+}
+#ipad_demo div {
+  background: black;
+  opacity: .7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 1;
+}
+#ipad_demo a {
+  position: relative;
+  z-index: 2;
+}
 
 @media screen and (min-width: 700px) {
   .sidetap-mobile-link {
