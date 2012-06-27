@@ -15,6 +15,7 @@ this.SidetapStandard = (function() {
     this.stp = this.detect_primary_element("sidetap");
     this.stp_nav = this.detect_primary_element("stp-nav");
     this.stp_content = this.detect_primary_element("stp-content");
+    this.full_heights = $(".stp-full-height");
     this.set_up_observers();
   }
 
@@ -26,6 +27,7 @@ this.SidetapStandard = (function() {
         console.warn("Sidetap: too many elements of class \"" + css_class + "\". There must be only one.");
       }
     }
+    el.addClass("stp-full-height");
     return el.first();
   };
 
@@ -44,7 +46,7 @@ this.SidetapStandard = (function() {
   };
 
   SidetapStandard.prototype.set_window_size = function() {
-    $(".stp-full-height").css("minHeight", window.innerHeight);
+    this.full_heights.css("minHeight", window.innerHeight);
     if (this.stp.hasClass("nav-showing")) {
       return this.set_nav_showing();
     } else {
@@ -154,7 +156,7 @@ this.SidetapIos = (function(_super) {
 
   SidetapIos.prototype.show_address_bar = function(evt) {
     this.address_bar_showing = true;
-    $(".stp-full-height").css("minHeight", 160);
+    this.full_heights.css("minHeight", 160);
     return setTimeout(this.set_window_size_2, 1);
   };
 
@@ -166,7 +168,7 @@ this.SidetapIos = (function(_super) {
   };
 
   SidetapIos.prototype.set_window_size_2 = function() {
-    $(".stp-full-height").css("minHeight", window.innerHeight);
+    this.full_heights.css("minHeight", window.innerHeight);
     $("body").css("paddingBottom", "0");
     if (this.stp.hasClass("nav-showing")) {
       return this.set_nav_showing();
