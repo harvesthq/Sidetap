@@ -1,26 +1,30 @@
 (function() {
   var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
   $(document).ready(function() {
-    var about, detail, gallery, photo, render_thumbnails, show_image, show_thumbnails, st, thumbnails;
-    Harvey.attach('only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-width: 420px)', {
-      setup: function() {
-        var category, i, image, list, _results;
-        _results = [];
-        for (category in images) {
-          list = images[category];
-          _results.push((function() {
-            var _len, _results2;
-            _results2 = [];
-            for (i = 0, _len = list.length; i < _len; i++) {
-              image = list[i];
-              image.url_s = image.url_s.replace(/_s\.jpg$/, '_q.jpg');
-              _results2.push(images[category][i] = image);
-            }
-            return _results2;
-          })());
-        }
-        return _results;
+    var about, bigger_badder_squares, detail, gallery, photo, render_thumbnails, show_image, show_thumbnails, st, thumbnails;
+    bigger_badder_squares = function() {
+      var category, i, image, list, _results;
+      _results = [];
+      for (category in images) {
+        list = images[category];
+        _results.push((function() {
+          var _len, _results2;
+          _results2 = [];
+          for (i = 0, _len = list.length; i < _len; i++) {
+            image = list[i];
+            image.url_s = image.url_s.replace(/_s\.jpg$/, '_q.jpg');
+            _results2.push(images[category][i] = image);
+          }
+          return _results2;
+        })());
       }
+      return _results;
+    };
+    Harvey.attach('only screen and (min-width: 420px)', {
+      setup: bigger_badder_squares
+    });
+    Harvey.attach('only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)', {
+      setup: bigger_badder_squares
     });
     st = sidetap();
     gallery = $('#gallery');
