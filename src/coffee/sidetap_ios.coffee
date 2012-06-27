@@ -14,7 +14,7 @@ class this.SidetapIos extends SidetapStandard
 
   show_address_bar: (evt) ->
     @address_bar_showing = true
-    $(".stp-full-height").css("minHeight", 160)
+    @full_heights.css("minHeight", 160)
     setTimeout(@set_window_size_2, 1)
   
   set_window_size: ->
@@ -24,7 +24,7 @@ class this.SidetapIos extends SidetapStandard
     setTimeout(@set_window_size_2,50)
   
   set_window_size_2: =>
-    $(".stp-full-height").css("minHeight", window.innerHeight)
+    @full_heights.css("minHeight", window.innerHeight)
     $("body").css("paddingBottom","0")
     if @stp.hasClass("nav-showing") then @set_nav_showing() else @set_nav_hiding()
 

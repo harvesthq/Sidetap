@@ -6,13 +6,14 @@ class this.SidetapStandard
     @stp = @detect_primary_element("sidetap")
     @stp_nav = @detect_primary_element("stp-nav")
     @stp_content = @detect_primary_element("stp-content")
-    @stp_fake_header = @detect_primary_element("stp-fake-header")
+    @full_heights = $(".stp-full-height")
     
     @set_up_observers()
   
   detect_primary_element: (css_class) ->
     el = $(".#{css_class}")
     console?.warn("Sidetap: too many elements of class \"#{css_class}\". There must be only one.") if el.length > 1
+    el.addClass("stp-full-height")
     el.first()
 
   getScrollTop: ->
@@ -25,7 +26,7 @@ class this.SidetapStandard
     $(".nav-toggle").click (evt) => @toggle_nav(evt)
 
   set_window_size: =>
-    $(".stp-full-height").css("minHeight", window.innerHeight)
+    @full_heights.css("minHeight", window.innerHeight)
     if @stp.hasClass("nav-showing") then @set_nav_showing() else @set_nav_hiding()
 
   toggle_nav: (e) =>
