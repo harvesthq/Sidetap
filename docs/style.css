@@ -107,10 +107,12 @@ code {
   right: 0;
 }
 
+header { padding-top: 10px; }
+
   h1 {
     overflow: hidden;
     height: 240px;
-    margin: 10px auto 20px;
+    margin: 0 auto 20px;
     width: 100%;
     max-width: 340px;
     text-indent: -999em;
@@ -235,6 +237,7 @@ b { font-weight: bold; }
   #opening, #opening + h2 { width: 100%; }
   body { width: 100%; padding: 0 25px 25px; }
   h2 { line-height: 1.25em; margin: 30px 0 10px;}
+  #github_ribbon { display: none; }
 }
 @media screen and (max-width: 340px) {
   h1 { height: 190px; }
