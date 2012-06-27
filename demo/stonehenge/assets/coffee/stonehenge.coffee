@@ -1,7 +1,7 @@
 $(document).ready () ->
 
   # use high-res thumbnail images on devices with higher pixel density
-  Harvey.attach 'only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)',
+  Harvey.attach 'only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-width: 420px)',
     setup: () ->
       for category, list of images
         for image, i in list
