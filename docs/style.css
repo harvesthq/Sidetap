@@ -54,7 +54,7 @@ table {
 body {
   position: relative;
   width: 980px;
-  padding-bottom: 100px;
+  padding: 50px 0 100px;
   margin: 0 auto;
 
   color: #bbb;
@@ -103,7 +103,7 @@ code {
   margin-left: -30px;
   padding: 149px 0 0 45px;
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 0;
 }
 
@@ -246,18 +246,66 @@ b { font-weight: bold; }
   z-index: 2;
 }
 
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+.oss-bar {
+  top: 0;
+  right: 20px;
+  position: fixed;
+  z-index: 1030;
+}
+.oss-bar ul {
+  float: right;
+  margin: 0;
+  list-style: none;
+}
+.oss-bar ul li {
+  float: left;
+  line-height: 0;
+}
+.oss-bar ul li a {
+  border: 0;
+  margin-top: -10px;
+  display: block;
+  height: 58px;  
+  background: #F36C00 url(oss-credit.png) no-repeat 20px 22px;
+  padding: 22px 20px 12px 20px;
+  text-indent: 120%; /* stupid padding */
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: all 0.10s ease-in-out;
+  -moz-transition: all 0.10s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.oss-bar ul li a:hover {
+  margin-top: 0px;
+}
+.oss-bar a.harvest {
+  width: 196px;
+  background-color: #F36C00;
+  background-position: -142px 22px;
+  padding-right: 22px; /* optical illusion */
+}
+.oss-bar a.fork {
+  width: 162px;
+  background-color: #333333;
+}
+
 @media screen and (min-width: 700px) {
   .sidetap-mobile-link {
     display: none;
   }
 }
 
+@media screen and (min-width: 700px) and (max-width: 970px) {
+  .oss-bar { right: 0; }
+}
 @media screen and (max-width: 700px) {
   #demo { display: none; }
   #opening, #opening + h2 { width: 100%; }
   body { width: 100%; padding: 0 25px 25px; }
   h2 { line-height: 1.25em; margin: 30px 0 10px;}
-  #github_ribbon { display: none; }
+  .oss-bar { display: none; }
 }
 @media screen and (max-width: 340px) {
   h1 { height: 190px; }
