@@ -1,38 +1,4 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -246,50 +212,28 @@ b { font-weight: bold; }
   z-index: 2;
 }
 
-/* Tweak navbar brand link to be super sleek
+/* OSS Bar
 -------------------------------------------------- */
-.oss-bar {
-  top: 0;
-  right: 20px;
-  position: fixed;
-  z-index: 1030;
-}
-.oss-bar ul {
-  float: right;
-  margin: 0;
-  list-style: none;
-}
-.oss-bar ul li {
-  float: left;
-  line-height: 0;
-}
+.oss-bar { top: 0; right: 20px; position: fixed; z-index: 1030; }
+.oss-bar ul { float: right; margin: 0; }
+.oss-bar ul li { float: left; line-height: 0; margin: 0; }
 .oss-bar ul li a {
-  border: 0;
   margin-top: -10px;
+  border: 0;
   display: block;
-  height: 58px;  
-  background: #F36C00 url(oss-credit.png) no-repeat 20px 22px;
-  padding: 22px 20px 12px 20px;
-  text-indent: 120%; /* stupid padding */
+  height: 52px;  
+  background: #F36C00 url(oss-credit.png) no-repeat 18px 20px;
+  padding: 20px 18px 10px 18px;
   white-space: nowrap;
   overflow: hidden;
+  text-indent: 100%;
   -webkit-transition: all 0.10s ease-in-out;
   -moz-transition: all 0.10s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-.oss-bar ul li a:hover {
-  margin-top: 0px;
-}
-.oss-bar a.harvest {
-  width: 196px;
-  background-color: #F36C00;
-  background-position: -142px 22px;
-  padding-right: 22px; /* optical illusion */
-}
-.oss-bar a.fork {
-  width: 162px;
-  background-color: #333333;
-}
+.oss-bar ul li a:hover { margin-top: 0px; }
+.oss-bar a.harvest { width: 178px; background-color: #F36C00; background-position: -136px 20px; }
+.oss-bar a.fork { width: 148px; background-color: #333333; }
 
 @media screen and (min-width: 700px) {
   .sidetap-mobile-link {
