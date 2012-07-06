@@ -215,8 +215,8 @@ b { font-weight: bold; }
 /* OSS Bar
 -------------------------------------------------- */
 .oss-bar { top: 0; right: 20px; position: fixed; z-index: 1030; }
-.oss-bar ul { float: right; margin: 0; }
-.oss-bar ul li { float: left; line-height: 0; margin: 0; }
+.oss-bar ul { float: right; margin: 0; list-style:none;}
+.oss-bar ul li { float: left; line-height: 0; margin: 0; list-style:none;}
 .oss-bar ul li a {
   margin-top: -10px;
   border: 0;
@@ -226,7 +226,7 @@ b { font-weight: bold; }
   padding: 20px 18px 10px 18px;
   white-space: nowrap;
   overflow: hidden;
-  text-indent: 100%;
+  text-indent: 120%;
   -webkit-transition: all 0.10s ease-in-out;
   -moz-transition: all 0.10s ease-in-out;
   transition: all 0.15s ease-in-out;
