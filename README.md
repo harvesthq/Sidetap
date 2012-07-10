@@ -6,7 +6,9 @@ We built Sidetap to be an easy-to-use implementation of the side navigation patt
 - **Device Support**: Sidetap aims to always deliver the best possible experience for all devices by starting with a basic experience and progressively enhancing it for more capable devices.
 - **Less Decisions to Make**: By embracing convention over configuration, Sidetap let’s you start building your mobile interfaces right away.
 - **Simple**: Sidetap provides a flexible foundation for navigating between content panels on mobile devices using an easy-to-use syntax.
-  
+
+[See it in action](http://harvesthq.github.com/Sidetap/demo/stonehenge/index.html).
+
 ##How to Use Sidetap
 
 1. **Build the HTML Structure**
