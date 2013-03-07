@@ -2,9 +2,9 @@
 
 We built Sidetap to be an easy-to-use implementation of the side navigation pattern popularized by apps like Sparrow and Facebook. It solves many common mobile development problems right out of the box. Here are some of the specific things we like about it:
 
-- **Lightweight**: Sidetap only weighs 2k when minifyied and gzipped!
+- **Lightweight**: Sidetap only weighs 2k when minified and gzipped!
 - **Device Support**: Sidetap aims to always deliver the best possible experience for all devices by starting with a basic experience and progressively enhancing it for more capable devices.
-- **Less Decisions to Make**: By embracing convention over configuration, Sidetap let’s you start building your mobile interfaces right away.
+- **Fewer Decisions to Make**: By embracing convention over configuration, Sidetap lets you start building your mobile interfaces right away.
 - **Simple**: Sidetap provides a flexible foundation for navigating between content panels on mobile devices using an easy-to-use syntax.
 
 [See it in action](http://harvesthq.github.com/Sidetap/demo/stonehenge/index.html).
