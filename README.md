@@ -62,3 +62,8 @@ As with any software project, there's always room for improvement. These are som
 - Better touch support
 - Leaving side navigation open on larger screen devices (hello, iPad)
 - Bringing polished version to more devices.
+
+
+##Sidetap Credits
+
+Built by @pfiller, @mlharvest, @kimku and @jkintscher for [Harvest](http://www.getharvest.com/). Want to work on projects like this? [We’re hiring](http://www.getharvest.com/careers)!
