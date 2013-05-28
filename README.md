@@ -13,7 +13,7 @@ We built Sidetap to be an easy-to-use implementation of the side navigation patt
 
 1. **Build the HTML Structure**
     
-    Sidetap uses a very specific HTML structure which can be found in the [skelton.html](https://github.com/harvesthq/Sidetap/blob/master/src/skeleton.html) file
+    Sidetap uses a very specific HTML structure which can be found in the [skeleton.html](https://github.com/harvesthq/Sidetap/blob/master/src/skeleton.html) file
 
 2. **Instantiate Sidetap**
     
