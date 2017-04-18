@@ -1,4 +1,4 @@
-#Sidetap
+# Sidetap
 
 We built Sidetap to be an easy-to-use implementation of the side navigation pattern popularized by apps like Sparrow and Facebook. It solves many common mobile development problems right out of the box. Here are some of the specific things we like about it:
 
@@ -9,7 +9,7 @@ We built Sidetap to be an easy-to-use implementation of the side navigation patt
 
 [See it in action](http://harvesthq.github.com/Sidetap/demo/stonehenge/index.html).
 
-##How to Use Sidetap
+## How to Use Sidetap
 
 1. **Build the HTML Structure**
     
@@ -33,11 +33,11 @@ We built Sidetap to be an easy-to-use implementation of the side navigation patt
     ``callback``: a function to fire when the switch is complete  
     ``animation``: an animation style to use (ios 5+ only). Current animations are upfrombottom, downfromtop, infromright, infromleft
 
-##Dependency
+## Dependency
 
 Requires jQuery (only tested with 1.7.2) or Zepto.js.
 
-##Building Files Using Grunt
+## Building Files Using Grunt
 
 Sidetap's javascript and css are written using coffeescript and less respectively. Each of these file types must be compiled before they can be used by the browser. To do this easily, we're using the excellent [grunt build system](https://github.com/cowboy/grunt). To use the build system, you must first install [node](http://nodejs.org/) and [npm](http://npmjs.org/).
 
@@ -50,11 +50,11 @@ There are a few available commands.
 - ``grunt`` or ``grunt build``: build the css & js files
 - ``grunt watch``: build the css & js files whenever the less or coffee files change
 
-##Reporting Issues & Contributing
+## Reporting Issues & Contributing
 
 We welcome your input, but strongly encourage you to read Nicolas Gallagher's excellent [issue guidelines](https://github.com/necolas/issue-guidelines/blob/master/README.md) before filing an issue or opening a pull request. While these are guidelines are his projects specifically, they would serve as an excellent guide for contributing to any open source project.
 
-##Development Roadmap
+## Development Roadmap
 
 As with any software project, there's always room for improvement. These are some of the things we'd like to get added to Sidetap in the future.
 
@@ -64,6 +64,6 @@ As with any software project, there's always room for improvement. These are som
 - Bringing polished version to more devices.
 
 
-##Sidetap Credits
+## Sidetap Credits
 
 Built by @pfiller, @mlharvest, @kimku and @jkintscher for [Harvest](http://www.getharvest.com/). Want to work on projects like this? [We’re hiring](http://www.getharvest.com/careers)!
