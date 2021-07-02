@@ -113,8 +113,10 @@ body {
 .showing-nav {
   -webkit-transform: translatex(272px);
   -moz-transform: translatex(272px);
+  transform: translatex(272px);
   -webkit-animation-name: slidefornav;
   -moz-animation-name: slidefornav;
+  animation-name: slidefornav;
   -webkit-animation-timing-function: ease-out;
   -moz-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
@@ -138,14 +140,24 @@ body {
     -moz-transform: translatex(272px);
   }
 }
+@keyframes slidefornav {
+  from {
+    transform: translatex(0);
+  }
+  to {
+    transform: translatex(272px);
+  }
+}
 /*
   Hide Navigation Animation
 */
 .hide-nav {
   -webkit-transform: translatex(0);
   -moz-transform: translatex(0);
+  transform: translatex(0);
   -webkit-animation-name: slideovernav;
   -moz-animation-name: slideovernav;
+  animation-name: slideovernav;
   -webkit-animation-timing-function: ease-out;
   -moz-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
@@ -169,27 +181,43 @@ body {
     -moz-transform: translatex(0);
   }
 }
+@keyframes slideovernav {
+  from {
+    transform: translatex(272px);
+  }
+  to {
+    transform: translatex(0);
+  }
+}
 /* Slide up or Down animation */
 .up-from-bottom {
   -webkit-transform: translatey(0);
   -moz-transform: translatey(0);
+  transform: translatey(0);
   -webkit-animation-name: upfrombottom;
   -moz-animation-name: upfrombottom;
+  animation-name: upfrombottom;
   -webkit-animation-timing-function: ease-out;
   -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-duration: 250ms;
   -moz-animation-duration: 250ms;
+  animation-duration: 250ms;
   z-index: 5;
 }
 .down-to-bottom {
   -webkit-transform: translatey(100%);
   -moz-transform: translatey(100%);
+  transform: translatey(100%);
   -webkit-animation-name: downtobottom;
   -moz-animation-name: downtobottom;
+  animation-name: downtobottom;
   -webkit-animation-timing-function: ease-out;
   -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-duration: 250ms;
   -moz-animation-duration: 250ms;
+  animation-duration: 250ms;
   z-index: 5;
 }
 @-webkit-keyframes upfrombottom {
